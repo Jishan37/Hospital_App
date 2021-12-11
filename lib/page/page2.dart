@@ -145,7 +145,7 @@ class _TwoState extends State<Two> {
               ),
               ),
               activeColor: Colors.lightBlue,
-              inactiveColor: Colors.black
+              inactiveColor: Colors.red
           ),
           BottomNavyBarItem(
               icon: Icon(Icons.ten_k,
@@ -157,7 +157,7 @@ class _TwoState extends State<Two> {
                 ),
               ),
               activeColor: Colors.red,
-              inactiveColor: Colors.black
+              inactiveColor: Colors.red
           ),
           BottomNavyBarItem(
               icon: Icon(Icons.ten_k,
@@ -169,7 +169,7 @@ class _TwoState extends State<Two> {
                 ),
               ),
               activeColor: Colors.green,
-              inactiveColor: Colors.black
+              inactiveColor: Colors.red
           ),
           BottomNavyBarItem(
               icon: Icon(Icons.ten_k,
@@ -181,7 +181,7 @@ class _TwoState extends State<Two> {
                 ),
               ),
               activeColor: Colors.orange,
-              inactiveColor: Colors.black
+              inactiveColor: Colors.red
           ),
         ],
       ),
