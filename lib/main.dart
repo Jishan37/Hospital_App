@@ -6,7 +6,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 void main() {
   runApp(MaterialApp(
     home: MyApp(),
-   // debugShowCheckedModeBanner: false,
+   debugShowCheckedModeBanner: false,
   ));
 }
 
