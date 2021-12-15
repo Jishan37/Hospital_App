@@ -129,6 +129,11 @@ class _TwoState extends State<Two> {
       bottomNavigationBar: BottomNavyBar(
         backgroundColor: Colors.grey.shade300,
         selectedIndex: CurrentIndex,
+        animationDuration: Duration(milliseconds: 200),
+        //itemCornerRadius: 500,
+        containerHeight: 60,
+        //showElevation: true,
+        //iconSize: 40,
         onItemSelected: (index){
           setState(() {
             CurrentIndex= index;
