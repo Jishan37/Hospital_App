@@ -1,6 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:hospital_app/kafi/bmi.dart';
+import 'package:hospital_app/ali/disease.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 
@@ -14,7 +14,11 @@ class Two extends StatefulWidget {
 class _TwoState extends State<Two> {
   var CurrentIndex=2;
   final screen=[
-
+  DeaseasePage(),
+    DeaseasePage(),
+    DeaseasePage(),
+    DeaseasePage(),
+    DeaseasePage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -58,107 +62,52 @@ class _TwoState extends State<Two> {
           )
         ],
       ),
-
       drawer: Drawer(
-        child: Container(
-          color: Colors.red,
-          child: ListView(
-            children: [
-              Container(
-                child: UserAccountsDrawerHeader(
-                  currentAccountPictureSize: Size.fromRadius(45.0),
-                  currentAccountPicture: CircleAvatar(
-                    backgroundImage: AssetImage('assets/44.png',),
-                  ),
-                  accountName: Text(''),
-                  accountEmail: Text(''),
-                  arrowColor: Colors.green,
-                  decoration: BoxDecoration(
-                    color: Colors.green,
+        child: ListView(
+          children: [
+            Stack(
+              children: [
+                Container(
+                  height: 181,
+                  child: Image.asset('assets/2.png',
+                  //fit: BoxFit.cover,
                   ),
                 ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                  //  Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('হসপিটাল',style: TextStyle(fontSize: 20),),
+                Container(
+                  alignment: Alignment(.88,-.2),
+                    height: 200,
+                    child: Text('HOSPITO',
+                      style: TextStyle(
+                          fontSize: 37,
+                          fontFamily: 'jas',
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black87
+                      ),
+                    )
                 ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                    //  Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('রোগ',style: TextStyle(fontSize: 20),),
+                Container(
+                    alignment: Alignment(.6,.4),
+                    height: 200,
+                    child: Text('Find Best',
+                      style: TextStyle(
+                          fontSize: 35,
+                          fontFamily: 'Pro',
+                          fontWeight: FontWeight.bold,
+                          color: Colors.redAccent
+                      ),
+                    )
                 ),
+                ListTile(
+
+                )
+              ],
+            ),
+            Container(
+              child: Divider(
+                thickness: 4,
               ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                    //  Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('ডাইগনিস্টিক',style: TextStyle(fontSize: 20),),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                    //  Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('এম্বুল্যান্স',style: TextStyle(fontSize: 20),),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                    //  Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('পরামর্শ',style: TextStyle(fontSize: 20),),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (cnx)=>BMI_Page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('বিএমআই',style: TextStyle(fontSize: 20),),
-                ),
-              ),
-              Container(
-                child: Divider(
-                  height: 20,
-                  thickness: 5,
-                  color: Colors.green,
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                    //  Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('About',style: TextStyle(fontSize: 20),),
-                ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                    //  Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('Faq',style: TextStyle(fontSize: 20),),
-                ),
-              ),
-            ],
-          ),
+            )
+          ],
         ),
       ),
       endDrawer: Drawer(
@@ -200,7 +149,7 @@ class _TwoState extends State<Two> {
               icon: Icon(Icons.ten_k,
               size: 30,
               ),
-              title: Text('Hositals',
+              title: Text('Hospitals',
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold
@@ -213,7 +162,7 @@ class _TwoState extends State<Two> {
               icon: Icon(Icons.ten_k,
                 size: 30,
               ),
-              title: Text('home',
+              title: Text('Disease',
                 style: TextStyle(
                     fontSize: 15
                 ),
@@ -259,6 +208,8 @@ class _TwoState extends State<Two> {
           ),
         ],
       ),
+      body: Center(
+        child: screen[CurrentIndex],),
     );
   }
 }
