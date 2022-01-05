@@ -1,6 +1,7 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:hospital_app/ali/disease.dart';
+import 'package:hospital_app/kafi/bmi.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 
@@ -63,51 +64,98 @@ class _TwoState extends State<Two> {
         ],
       ),
       drawer: Drawer(
-        child: ListView(
-          children: [
-            Stack(
-              children: [
-                Container(
-                  height: 181,
-                  child: Image.asset('assets/2.png',
-                  //fit: BoxFit.cover,
+        child: Container(
+          color: Colors.red,
+          child: ListView(
+            children: [
+              Container(
+                child: UserAccountsDrawerHeader(
+                  currentAccountPictureSize: Size.fromRadius(45.0),
+                  currentAccountPicture: CircleAvatar(
+                    backgroundImage: AssetImage('assets/44.png'),
+                  ),
+                  accountName: Text(''),
+                  accountEmail: Text(''),
+                  arrowColor: Colors.green,
+                  decoration: BoxDecoration(
+                    color: Colors.green,
                   ),
                 ),
-                Container(
-                  alignment: Alignment(.88,-.2),
-                    height: 200,
-                    child: Text('HOSPITO',
-                      style: TextStyle(
-                          fontSize: 37,
-                          fontFamily: 'jas',
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black87
-                      ),
-                    )
-                ),
-                Container(
-                    alignment: Alignment(.6,.4),
-                    height: 200,
-                    child: Text('Find Best',
-                      style: TextStyle(
-                          fontSize: 35,
-                          fontFamily: 'Pro',
-                          fontWeight: FontWeight.bold,
-                          color: Colors.redAccent
-                      ),
-                    )
-                ),
-                ListTile(
-
-                )
-              ],
-            ),
-            Container(
-              child: Divider(
-                thickness: 4,
               ),
-            )
-          ],
+              Card(
+                child: ListTile(
+                  onTap: (){
+                   // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                  },
+                  leading: Icon(MdiIcons.doctor,size: 26,),
+                  title: Text('Hospital',style: TextStyle(fontSize: 20),),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  onTap: (){
+                    // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                  },
+                  leading: Icon(MdiIcons.doctor,size: 26,),
+                  title: Text('Disease',style: TextStyle(fontSize: 20),),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  onTap: (){
+                    // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                  },
+                  leading: Icon(MdiIcons.doctor,size: 26,),
+                  title: Text('Digonistic Center',style: TextStyle(fontSize: 20),),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  onTap: (){
+                    // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                  },
+                  leading: Icon(MdiIcons.doctor,size: 26,),
+                  title: Text('Ambulence',style: TextStyle(fontSize: 20),),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  onTap: (){
+                    // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                  },
+                  leading: Icon(MdiIcons.doctor,size: 26,),
+                  title: Text('Poramorsho',style: TextStyle(fontSize: 20),),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  onTap: (){
+                     Navigator.push(context, MaterialPageRoute(builder: (cnx)=>BMI_Page()));
+                  },
+                  leading: Icon(MdiIcons.doctor,size: 26,),
+                  title: Text('BMI',style: TextStyle(fontSize: 20),),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  onTap: (){
+                    // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                  },
+                  leading: Icon(MdiIcons.doctor,size: 26,),
+                  title: Text('About',style: TextStyle(fontSize: 20),),
+                ),
+              ),
+              Card(
+                child: ListTile(
+                  onTap: (){
+                    // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                  },
+                  leading: Icon(MdiIcons.doctor,size: 26,),
+                  title: Text('Faq',style: TextStyle(fontSize: 20),),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
       endDrawer: Drawer(
