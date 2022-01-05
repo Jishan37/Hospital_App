@@ -23,9 +23,12 @@ class _DeaseasePageState extends State<DeaseasePage> {
         children: [
           Container(
             //color: Colors.redAccent,
-            child: Text('আপনার সমস্যা নির্বাচন করুন',
-              style: TextStyle(
-                fontSize: 26,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 25),
+              child: Text('আপনার সমস্যা নির্বাচন করুন',
+                style: TextStyle(
+                  fontSize: 26,
+                ),
               ),
             ),
           ),

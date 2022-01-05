@@ -136,6 +136,12 @@ class _TwoState extends State<Two> {
                   title: Text('BMI',style: TextStyle(fontSize: 20),),
                 ),
               ),
+              Container(
+                child: Divider(
+                  height: 30,
+                  thickness: 5,
+                ),
+              ),
               Card(
                 child: ListTile(
                   onTap: (){
