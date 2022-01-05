@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:hospital_app/ali/disease.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 
@@ -13,7 +14,11 @@ class Two extends StatefulWidget {
 class _TwoState extends State<Two> {
   var CurrentIndex=2;
   final screen=[
-
+  DeaseasePage(),
+    DeaseasePage(),
+    DeaseasePage(),
+    DeaseasePage(),
+    DeaseasePage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -144,7 +149,7 @@ class _TwoState extends State<Two> {
               icon: Icon(Icons.ten_k,
               size: 30,
               ),
-              title: Text('Hositals',
+              title: Text('Hospitals',
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold
@@ -157,7 +162,7 @@ class _TwoState extends State<Two> {
               icon: Icon(Icons.ten_k,
                 size: 30,
               ),
-              title: Text('home',
+              title: Text('Disease',
                 style: TextStyle(
                     fontSize: 15
                 ),
@@ -203,6 +208,8 @@ class _TwoState extends State<Two> {
           ),
         ],
       ),
+      body: Center(
+        child: screen[CurrentIndex],),
     );
   }
 }
