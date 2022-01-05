@@ -144,13 +144,14 @@ class _TwoState extends State<Two> {
               icon: Icon(Icons.ten_k,
               size: 30,
               ),
-              title: Text('home',
+              title: Text('Hositals',
               style: TextStyle(
-                fontSize: 15
+                fontSize: 16,
+                fontWeight: FontWeight.bold
               ),
               ),
-              activeColor: Colors.lightBlue,
-              inactiveColor: Colors.red
+              activeColor: Colors.red,
+              inactiveColor: Colors.blueAccent
           ),
           BottomNavyBarItem(
               icon: Icon(Icons.ten_k,
@@ -186,6 +187,18 @@ class _TwoState extends State<Two> {
                 ),
               ),
               activeColor: Colors.orange,
+              inactiveColor: Colors.red
+          ),
+          BottomNavyBarItem(
+              icon: Icon(Icons.ten_k,
+                size: 30,
+              ),
+              title: Text('home',
+                style: TextStyle(
+                    fontSize: 15
+                ),
+              ),
+              activeColor: Colors.green,
               inactiveColor: Colors.red
           ),
         ],
