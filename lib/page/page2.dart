@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:hospital_app/Jishan/Hospital/hospital_main_page.dart';
 import 'package:hospital_app/ali/diagnostic.dart';
 import 'package:hospital_app/ali/disease.dart';
 import 'package:hospital_app/kafi/bmi.dart';
@@ -16,7 +17,7 @@ class Two extends StatefulWidget {
 class _TwoState extends State<Two> {
   var CurrentIndex=2;
   final screen=[
-  DeaseasePage(),
+    HospitalMainPage(),
     DeaseasePage(),
     DeaseasePage(),
     DiagnosticPage(),
