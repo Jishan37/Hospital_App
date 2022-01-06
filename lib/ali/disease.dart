@@ -35,7 +35,7 @@ class _DeaseasePageState extends State<DeaseasePage> {
           SizedBox(height: 10,),
           ListTile(
             // leading: Icon(Icons.ac_unit),
-            title: Text('নাক, ​​কান, গলা',
+            title: Text('নাক, কান, গলা',
               style: TextStyle(
                 fontSize: 20,
               ),

@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:hospital_app/ali/diagnostic.dart';
 import 'package:hospital_app/ali/disease.dart';
 import 'package:hospital_app/kafi/bmi.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -18,7 +19,7 @@ class _TwoState extends State<Two> {
   DeaseasePage(),
     DeaseasePage(),
     DeaseasePage(),
-    DeaseasePage(),
+    DiagnosticPage(),
     DeaseasePage(),
   ];
   @override
@@ -240,7 +241,7 @@ class _TwoState extends State<Two> {
               icon: Icon(Icons.ten_k,
                 size: 30,
               ),
-              title: Text('home',
+              title: Text('Diagnostic',
                 style: TextStyle(
                     fontSize: 15
                 ),
