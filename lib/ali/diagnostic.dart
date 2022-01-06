@@ -21,16 +21,21 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      backgroundColor: Colors.purple.shade100,
+      /*appBar: AppBar(
         title: Text('Diagnostic'),
         centerTitle: true,
-      ),
+      ),*/
       body: ListView(
         children: [
           Card(
+            color: Colors.white70,
             child: ListTile(
              // tileColor: Colors.redAccent,
-             title: Text('1. ল্যাবেইড লিমিটেড ডায়াগনস্টিক, কুমিল্লা শাখা'),
+             title: Text('১. ল্যাবেইড লিমিটেড ডায়াগনস্টিক, কুমিল্লা শাখা',
+             style: TextStyle(
+              // fontWeight: FontWeight.bold,
+             ),),
               onTap: (){
                Navigator.push(context, MaterialPageRoute(builder: (cnx){
                  return D1();
@@ -39,8 +44,9 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
             ),
           ),
           Card(
+            color: Colors.white70,
             child: ListTile(
-             title: Text('2. কুমিল্লা সিটি স্ক্যান এমআরআই এন্ড স্পেশালাইজড ডায়াগনস্টিক সেন্টার'),
+             title: Text('২. কুমিল্লা সিটি স্ক্যান এমআরআই এন্ড স্পেশালাইজড ডায়াগনস্টিক সেন্টার'),
               onTap: (){
                Navigator.push(context, MaterialPageRoute(builder: (cnx){
                  return D2();
@@ -49,8 +55,9 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
             ),
           ),
           Card(
+            color: Colors.white70,
             child: ListTile(
-             title: Text('3. ইবনে সিনা ডায়াগনস্টিক ও কনসালটেশন সেন্টার'),
+             title: Text('৩. ইবনে সিনা ডায়াগনস্টিক ও কনসালটেশন সেন্টার'),
               onTap: (){
                Navigator.push(context, MaterialPageRoute(builder: (cnx){
                  return D3();
@@ -59,8 +66,9 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
             ),
           ),
           Card(
+            color: Colors.white70,
             child: ListTile(
-              title: Text('4. কুমিল্লা ল্যাব সিটি'),
+              title: Text('৪. কুমিল্লা ল্যাব সিটি'),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (cnx){
                   return D4();
@@ -69,8 +77,9 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
             ),
           ),
           Card(
+            color: Colors.white70,
             child: ListTile(
-              title: Text('5. সিটি স্ক্যান পয়েন্ট কুমিল্লা'),
+              title: Text('৫. সিটি স্ক্যান পয়েন্ট কুমিল্লা'),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (cnx){
                   return D5();
@@ -79,8 +88,9 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
             ),
           ),
           Card(
+            color: Colors.white70,
             child: ListTile(
-              title: Text('6. সানরাইজ ডায়াগনস্টিক এন্ড কনসালটেশন সেন্টার'),
+              title: Text('৬. সানরাইজ ডায়াগনস্টিক এন্ড কনসালটেশন সেন্টার'),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (cnx){
                   return D6();
@@ -89,8 +99,9 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
             ),
           ),
           Card(
+            color: Colors.white70,
             child: ListTile(
-              title: Text('7. কুমিল্লা হিউম্যান ডায়াগনস্টিক সেন্টার'),
+              title: Text('৭. কুমিল্লা হিউম্যান ডায়াগনস্টিক সেন্টার'),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (cnx){
                   return D7();
@@ -99,8 +110,9 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
             ),
           ),
           Card(
+            color: Colors.white70,
             child: ListTile(
-              title: Text('8. অ্যাপোলো ডায়াগনস্টিক সেন্টার'),
+              title: Text('৮. অ্যাপোলো ডায়াগনস্টিক সেন্টার'),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (cnx){
                   return D8();
@@ -109,8 +121,9 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
             ),
           ),
           Card(
+            color: Colors.white70,
             child: ListTile(
-              title: Text('9. শেভরন ডায়াগনস্টিক সেন্টার'),
+              title: Text('৯. শেভরন ডায়াগনস্টিক সেন্টার'),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (cnx){
                   return D9();
@@ -119,13 +132,44 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
             ),
           ),
           Card(
+            color: Colors.white70,
             child: ListTile(
-              title: Text('10. মেডিল্যাব ডায়াগনস্টিক অ্যান্ড কনসালটেশন ইউনিট'),
+              title: Text('১০. মেডিল্যাব ডায়াগনস্টিক অ্যান্ড কনসালটেশন ইউনিট'),
               onTap: (){
                 Navigator.push(context, MaterialPageRoute(builder: (cnx){
                   return D10();
                 }));
               },
+            ),
+          ),
+          Card(
+            color: Colors.white70,
+            child: ListTile(
+              title: Text(""),
+            ),
+          ),
+          Card(
+            color: Colors.white70,
+            child: ListTile(
+              title: Text(""),
+            ),
+          ),
+          Card(
+            color: Colors.white70,
+            child: ListTile(
+              title: Text(""),
+            ),
+          ),
+          Card(
+            color: Colors.white70,
+            child: ListTile(
+              title: Text(""),
+            ),
+          ),
+          Card(
+            color: Colors.white70,
+            child: ListTile(
+              title: Text(""),
             ),
           ),
         ],
