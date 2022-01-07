@@ -14,6 +14,7 @@ class _D7State extends State<D7> {
       appBar: AppBar(
         title: Text('কুমিল্লা হিউম্যান ডায়াগনস্টিক সেন্টার',
           style: TextStyle(
+            fontSize: 19,
             fontWeight: FontWeight.bold,
           ),),
         centerTitle: true,

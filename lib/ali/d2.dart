@@ -12,8 +12,9 @@ class _D2State extends State<D2> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('কুমিল্লা সিটি স্ক্যান এমআরআই এন্ড স্পেশালাইজড ডায়াগনস্টিক সেন্টার',
+        title: Text('কুমিল্লা সিটি স্ক্যান এমআরআই এন্ড\nস্পেশালাইজড ডায়াগনস্টিক সেন্টার',
           style: TextStyle(
+            fontSize: 18,
             fontWeight: FontWeight.bold,
           ),),
         centerTitle: true,

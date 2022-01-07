@@ -12,8 +12,9 @@ class _D6State extends State<D6> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('সানরাইজ ডায়াগনস্টিক এন্ড কনসালটেশন সেন্টার',
+        title: Text('সানরাইজ ডায়াগনস্টিক\nএন্ড কনসালটেশন সেন্টার',
           style: TextStyle(
+            fontSize: 19,
             fontWeight: FontWeight.bold,
           ),),
         centerTitle: true,

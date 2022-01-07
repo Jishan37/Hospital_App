@@ -89,10 +89,28 @@ class _TwoState extends State<Two> {
                 Card(
                   child: ListTile(
                     onTap: (){
-                     // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                      Navigator.push(context, MaterialPageRoute(builder: (cnx)=>HospitalMainPage()));
                     },
-                    leading: Icon(MdiIcons.doctor,size: 26,),
-                    title: Text('Hospital',style: TextStyle(fontSize: 20),),
+                    leading: Icon(MdiIcons.hospitalBuilding,size: 30,color: Colors.black87,),
+                    title: Text('হাসপাতাল',style: TextStyle(fontSize: 20),),
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    onTap: (){
+                       Navigator.push(context, MaterialPageRoute(builder: (cnx)=>DeaseasePage()));
+                    },
+                    leading: Icon(MdiIcons.doctor,size: 30,color: Colors.black87),
+                    title: Text('রোগ বিশেষজ্ঞ',style: TextStyle(fontSize: 20),),
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    onTap: (){
+                       Navigator.push(context, MaterialPageRoute(builder: (cnx)=>DiagnosticPage()));
+                    },
+                    leading: Icon(MdiIcons.officeBuilding,size: 30,color: Colors.black87,),
+                    title: Text('ডায়াগনস্টিক সেন্টার',style: TextStyle(fontSize: 20),),
                   ),
                 ),
                 Card(
@@ -100,8 +118,8 @@ class _TwoState extends State<Two> {
                     onTap: (){
                       // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
                     },
-                    leading: Icon(MdiIcons.doctor,size: 26,),
-                    title: Text('Disease',style: TextStyle(fontSize: 20),),
+                    leading: Icon(MdiIcons.ambulance,size: 30,color: Colors.black87),
+                    title: Text('অ্যাম্বুলেন্স সার্ভিস',style: TextStyle(fontSize: 20),),
                   ),
                 ),
                 Card(
@@ -109,26 +127,8 @@ class _TwoState extends State<Two> {
                     onTap: (){
                       // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
                     },
-                    leading: Icon(MdiIcons.doctor,size: 26,),
-                    title: Text('Digonistic Center',style: TextStyle(fontSize: 20),),
-                  ),
-                ),
-                Card(
-                  child: ListTile(
-                    onTap: (){
-                      // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                    },
-                    leading: Icon(MdiIcons.doctor,size: 26,),
-                    title: Text('Ambulence',style: TextStyle(fontSize: 20),),
-                  ),
-                ),
-                Card(
-                  child: ListTile(
-                    onTap: (){
-                      // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                    },
-                    leading: Icon(MdiIcons.doctor,size: 26,),
-                    title: Text('Poramorsho',style: TextStyle(fontSize: 20),),
+                    leading: Icon(MdiIcons.textBox,size: 30,color: Colors.black87),
+                    title: Text('পরামর্শ',style: TextStyle(fontSize: 20),),
                   ),
                 ),
                 Card(
@@ -136,8 +136,8 @@ class _TwoState extends State<Two> {
                     onTap: (){
                        Navigator.push(context, MaterialPageRoute(builder: (cnx)=>BMI_Page()));
                     },
-                    leading: Icon(MdiIcons.doctor,size: 26,),
-                    title: Text('BMI',style: TextStyle(fontSize: 20),),
+                    leading: Icon(MdiIcons.calculatorVariantOutline,size: 30,color: Colors.black87),
+                    title: Text('বিএমআই(BMI)',style: TextStyle(fontSize: 20),),
                   ),
                 ),
                 Container(
@@ -151,7 +151,7 @@ class _TwoState extends State<Two> {
                     onTap: (){
                       // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
                     },
-                    leading: Icon(MdiIcons.doctor,size: 26,),
+                    leading: Icon(MdiIcons.doctor,size: 26,color: Colors.black87),
                     title: Text('About',style: TextStyle(fontSize: 20),),
                   ),
                 ),
@@ -160,7 +160,7 @@ class _TwoState extends State<Two> {
                     onTap: (){
                       // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
                     },
-                    leading: Icon(MdiIcons.doctor,size: 26,),
+                    leading: Icon(Icons.question_answer_outlined,size: 26,color: Colors.black87),
                     title: Text('Faq',style: TextStyle(fontSize: 20),),
                   ),
                 ),
@@ -205,7 +205,7 @@ class _TwoState extends State<Two> {
         },
         items: [
           BottomNavyBarItem(
-              icon: Icon(Icons.ten_k,
+              icon: Icon(MdiIcons.hospitalBuilding,
               size: 30,
               ),
               title: Text('Hospitals',
@@ -218,7 +218,7 @@ class _TwoState extends State<Two> {
               inactiveColor: Colors.blueAccent
           ),
           BottomNavyBarItem(
-              icon: Icon(Icons.ten_k,
+              icon: Icon(MdiIcons.skull,
                 size: 30,
               ),
               title: Text('Disease',
@@ -230,7 +230,7 @@ class _TwoState extends State<Two> {
               inactiveColor: Colors.red
           ),
           BottomNavyBarItem(
-              icon: Icon(Icons.ten_k,
+              icon: Icon(MdiIcons.homeCircle,
                 size: 30,
               ),
               title: Text('home',
@@ -242,7 +242,7 @@ class _TwoState extends State<Two> {
               inactiveColor: Colors.red
           ),
           BottomNavyBarItem(
-              icon: Icon(Icons.ten_k,
+              icon: Icon(MdiIcons.officeBuildingOutline,
                 size: 30,
               ),
               title: Text('Diagnostic',
@@ -254,10 +254,10 @@ class _TwoState extends State<Two> {
               inactiveColor: Colors.red
           ),
           BottomNavyBarItem(
-              icon: Icon(Icons.ten_k,
+              icon: Icon(MdiIcons.ambulance,
                 size: 30,
               ),
-              title: Text('home',
+              title: Text('Ambulance',
                 style: TextStyle(
                     fontSize: 15
                 ),

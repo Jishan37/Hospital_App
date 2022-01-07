@@ -17,6 +17,7 @@ class _D1State extends State<D1> {
       appBar: AppBar(
         title: Text('ল্যাবেইড লিমিটেড ডায়াগনস্টিক, কুমিল্লা',
         style: TextStyle(
+          fontSize: 17,
           fontWeight: FontWeight.bold,
         ),),
         centerTitle: true,
@@ -57,7 +58,7 @@ class _D1State extends State<D1> {
             Positioned(
               height: 75,
               width: 250,
-              bottom: 75,
+              bottom: 70,
               child: Container(
                //color: Colors.blue,
                 child: Text('\nফোন: 01810-106277',

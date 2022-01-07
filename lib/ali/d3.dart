@@ -12,8 +12,9 @@ class _D3State extends State<D3> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ইবনে সিনা ডায়াগনস্টিক ও কনসালটেশন সেন্টার',
+        title: Text('ইবনে সিনা ডায়াগনস্টিক \n ও কনসালটেশন সেন্টার',
           style: TextStyle(
+            fontSize: 19,
             fontWeight: FontWeight.bold,
           ),),
         centerTitle: true,

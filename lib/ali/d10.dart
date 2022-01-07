@@ -12,8 +12,9 @@ class _D10State extends State<D10> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('মেডিল্যাব ডায়াগনস্টিক অ্যান্ড কনসালটেশন ইউনিট',
+        title: Text('মেডিল্যাব ডায়াগনস্টিক\nঅ্যান্ড কনসালটেশন ইউনিট',
           style: TextStyle(
+            fontSize: 19,
             fontWeight: FontWeight.bold,
           ),),
         centerTitle: true,
