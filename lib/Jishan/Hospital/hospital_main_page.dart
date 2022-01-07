@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hospital_app/Jishan/Hospital/comilla_medical.dart';
 
 class HospitalMainPage extends StatefulWidget {
   const HospitalMainPage({Key? key}) : super(key: key);
@@ -16,27 +17,34 @@ class _HospitalMainPageState extends State<HospitalMainPage> {
         padding: const EdgeInsets.only(top: 5,right: 2,left: 3,bottom: 2),
         child: ListView(
           children: [
-            Card(
-              color: Colors.white70,
-              child: ListTile(
-                title: Text("কুমিল্লা মেডিকেল কলেজ হাসপাতাল",
-                style: TextStyle(
-                  fontSize: 17,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.red
-                ),
-                ),
-                subtitle: Text("ডাঃ আখতার হামিদ খান রোড,হাউজিং স্টেট,কুমিল্লা",
+            InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                  return Comilla_medical();
+                })) ;
+              },
+              child: Card(
+                color: Colors.white70,
+                child: ListTile(
+                  title: Text("কুমিল্লা মেডিকেল কলেজ হাসপাতাল",
                   style: TextStyle(
-                      fontSize: 12.5,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.green
+                    fontSize: 17,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.red
                   ),
+                  ),
+                  subtitle: Text("ডাঃ আখতার হামিদ খান রোড,হাউজিং স্টেট,কুমিল্লা",
+                    style: TextStyle(
+                        fontSize: 12.5,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green
+                    ),
+                  ),
+                  trailing: Container(
+                      height: 60,
+                      width: 60,
+                      child: Image.asset("assets/cmc.jpg",fit: BoxFit.cover,)),
                 ),
-                trailing: Container(
-                    height: 60,
-                    width: 60,
-                    child: Image.asset("assets/cmc.jpg",fit: BoxFit.cover,)),
               ),
             ),
             Card(

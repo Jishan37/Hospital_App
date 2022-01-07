@@ -68,101 +68,104 @@ class _TwoState extends State<Two> {
       drawer: Drawer(
         child: Container(
           color: Colors.red,
-          child: ListView(
-            children: [
-              Container(
-                child: UserAccountsDrawerHeader(
-                  currentAccountPictureSize: Size.fromRadius(45.0),
-                  currentAccountPicture: CircleAvatar(
-                    backgroundImage: AssetImage('assets/44.png'),
+          child: Padding(
+            padding: const EdgeInsets.all(10),
+            child: ListView(
+              children: [
+                Container(
+                  child: UserAccountsDrawerHeader(
+                    currentAccountPictureSize: Size.fromRadius(45.0),
+                    currentAccountPicture: CircleAvatar(
+                      backgroundImage: AssetImage('assets/44.png'),
+                    ),
+                    accountName: Text(''),
+                    accountEmail: Text(''),
+                    arrowColor: Colors.green,
+                    decoration: BoxDecoration(
+                      color: Colors.green,
+                    ),
                   ),
-                  accountName: Text(''),
-                  accountEmail: Text(''),
-                  arrowColor: Colors.green,
-                  decoration: BoxDecoration(
-                    color: Colors.green,
+                ),
+                Card(
+                  child: ListTile(
+                    onTap: (){
+                     // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                    },
+                    leading: Icon(MdiIcons.doctor,size: 26,),
+                    title: Text('Hospital',style: TextStyle(fontSize: 20),),
                   ),
                 ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                   // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('Hospital',style: TextStyle(fontSize: 20),),
+                Card(
+                  child: ListTile(
+                    onTap: (){
+                      // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                    },
+                    leading: Icon(MdiIcons.doctor,size: 26,),
+                    title: Text('Disease',style: TextStyle(fontSize: 20),),
+                  ),
                 ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                    // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('Disease',style: TextStyle(fontSize: 20),),
+                Card(
+                  child: ListTile(
+                    onTap: (){
+                      // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                    },
+                    leading: Icon(MdiIcons.doctor,size: 26,),
+                    title: Text('Digonistic Center',style: TextStyle(fontSize: 20),),
+                  ),
                 ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                    // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('Digonistic Center',style: TextStyle(fontSize: 20),),
+                Card(
+                  child: ListTile(
+                    onTap: (){
+                      // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                    },
+                    leading: Icon(MdiIcons.doctor,size: 26,),
+                    title: Text('Ambulence',style: TextStyle(fontSize: 20),),
+                  ),
                 ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                    // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('Ambulence',style: TextStyle(fontSize: 20),),
+                Card(
+                  child: ListTile(
+                    onTap: (){
+                      // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                    },
+                    leading: Icon(MdiIcons.doctor,size: 26,),
+                    title: Text('Poramorsho',style: TextStyle(fontSize: 20),),
+                  ),
                 ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                    // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('Poramorsho',style: TextStyle(fontSize: 20),),
+                Card(
+                  child: ListTile(
+                    onTap: (){
+                       Navigator.push(context, MaterialPageRoute(builder: (cnx)=>BMI_Page()));
+                    },
+                    leading: Icon(MdiIcons.doctor,size: 26,),
+                    title: Text('BMI',style: TextStyle(fontSize: 20),),
+                  ),
                 ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                     Navigator.push(context, MaterialPageRoute(builder: (cnx)=>BMI_Page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('BMI',style: TextStyle(fontSize: 20),),
+                Container(
+                  child: Divider(
+                    height: 30,
+                    thickness: 5,
+                  ),
                 ),
-              ),
-              Container(
-                child: Divider(
-                  height: 30,
-                  thickness: 5,
+                Card(
+                  child: ListTile(
+                    onTap: (){
+                      // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                    },
+                    leading: Icon(MdiIcons.doctor,size: 26,),
+                    title: Text('About',style: TextStyle(fontSize: 20),),
+                  ),
                 ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                    // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('About',style: TextStyle(fontSize: 20),),
+                Card(
+                  child: ListTile(
+                    onTap: (){
+                      // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                    },
+                    leading: Icon(MdiIcons.doctor,size: 26,),
+                    title: Text('Faq',style: TextStyle(fontSize: 20),),
+                  ),
                 ),
-              ),
-              Card(
-                child: ListTile(
-                  onTap: (){
-                    // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
-                  },
-                  leading: Icon(MdiIcons.doctor,size: 26,),
-                  title: Text('Faq',style: TextStyle(fontSize: 20),),
-                ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
