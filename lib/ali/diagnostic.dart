@@ -26,153 +26,223 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
         title: Text('Diagnostic'),
         centerTitle: true,
       ),*/
-      body: ListView(
-        children: [
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-             // tileColor: Colors.redAccent,
-             title: Text('১. ল্যাবেইড লিমিটেড ডায়াগনস্টিক, কুমিল্লা শাখা',
-             style: TextStyle(
-              // fontWeight: FontWeight.bold,
-             ),),
-              onTap: (){
-               Navigator.push(context, MaterialPageRoute(builder: (cnx){
-                 return D1();
-               }));
-              },
+      body: Padding(
+        padding: const EdgeInsets.only(top: 5,right: 2,left: 3,bottom: 2),
+        child: ListView(
+          children: [
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+               // tileColor: Colors.redAccent,
+               title: Text('১. ল্যাবেইড লিমিটেড ডায়াগনস্টিক, কুমিল্লা শাখা',
+               style: TextStyle(
+                 fontWeight: FontWeight.bold,
+               ),),
+                trailing: Container(
+                  height: 50,
+                  width: 50,
+                  child: Image.asset('assets/d1_lab.jpg',fit: BoxFit.cover,),),
+                onTap: (){
+                 Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                   return D1();
+                 }));
+                },
+              ),
             ),
-          ),
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-             title: Text('২. কুমিল্লা সিটি স্ক্যান এমআরআই এন্ড স্পেশালাইজড ডায়াগনস্টিক সেন্টার'),
-              onTap: (){
-               Navigator.push(context, MaterialPageRoute(builder: (cnx){
-                 return D2();
-               }));
-              },
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+               title: Text('২. কুমিল্লা সিটি স্ক্যান এমআরআই এন্ড স্পেশালাইজড ডায়াগনস্টিক সেন্টার',
+                 style: TextStyle(
+                   fontWeight: FontWeight.bold,
+                 ),),
+                trailing: Container(
+                  height: 50,
+                  width: 50,
+                  child: Image.asset('assets/d2_ct.jpg',fit: BoxFit.cover,),),
+                onTap: (){
+                 Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                   return D2();
+                 }));
+                },
+              ),
             ),
-          ),
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-             title: Text('৩. ইবনে সিনা ডায়াগনস্টিক ও কনসালটেশন সেন্টার'),
-              onTap: (){
-               Navigator.push(context, MaterialPageRoute(builder: (cnx){
-                 return D3();
-               }));
-              },
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+               title: Text('৩. ইবনে সিনা ডায়াগনস্টিক ও কনসালটেশন সেন্টার',
+                 style: TextStyle(
+                   fontWeight: FontWeight.bold,
+                 ),),
+                trailing: Container(
+                  height: 50,
+                  width: 50,
+                  child: Image.asset('assets/d3_ibn.jpg',fit: BoxFit.cover,),),
+                onTap: (){
+                 Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                   return D3();
+                 }));
+                },
+              ),
             ),
-          ),
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-              title: Text('৪. কুমিল্লা ল্যাব সিটি'),
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (cnx){
-                  return D4();
-                }));
-              },
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+                title: Text('৪. কুমিল্লা ল্যাব সিটি',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),),
+                trailing: Container(
+                  height: 50,
+                  width: 50,
+                  child: Image.asset('assets/d4_labc.jpg',fit: BoxFit.cover,),),
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                    return D4();
+                  }));
+                },
+              ),
             ),
-          ),
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-              title: Text('৫. সিটি স্ক্যান পয়েন্ট কুমিল্লা'),
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (cnx){
-                  return D5();
-                }));
-              },
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+                title: Text('৫. সিটি স্ক্যান পয়েন্ট কুমিল্লা',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),),
+                trailing: Container(
+                  height: 50,
+                  width: 50,
+                  child: Image.asset('assets/d5_ctp.jpg',fit: BoxFit.cover,),),
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                    return D5();
+                  }));
+                },
+              ),
             ),
-          ),
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-              title: Text('৬. সানরাইজ ডায়াগনস্টিক এন্ড কনসালটেশন সেন্টার'),
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (cnx){
-                  return D6();
-                }));
-              },
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+                title: Text('৬. সানরাইজ ডায়াগনস্টিক এন্ড কনসালটেশন সেন্টার',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),),
+                trailing: Container(
+                  height: 50,
+                  width: 50,
+                  child: Image.asset('assets/diag.png',fit: BoxFit.cover,),),
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                    return D6();
+                  }));
+                },
+              ),
             ),
-          ),
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-              title: Text('৭. কুমিল্লা হিউম্যান ডায়াগনস্টিক সেন্টার'),
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (cnx){
-                  return D7();
-                }));
-              },
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+                title: Text('৭. কুমিল্লা হিউম্যান ডায়াগনস্টিক সেন্টার',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),),
+                trailing: Container(
+                  height: 50,
+                  width: 50,
+                  child: Image.asset('assets/diag.png',fit: BoxFit.cover,),),
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                    return D7();
+                  }));
+                },
+              ),
             ),
-          ),
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-              title: Text('৮. অ্যাপোলো ডায়াগনস্টিক সেন্টার'),
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (cnx){
-                  return D8();
-                }));
-              },
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+                title: Text('৮. অ্যাপোলো ডায়াগনস্টিক সেন্টার',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),),
+                trailing: Container(
+                  height: 50,
+                  width: 50,
+                  child: Image.asset('assets/diag.png',fit: BoxFit.cover,),),
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                    return D8();
+                  }));
+                },
+              ),
             ),
-          ),
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-              title: Text('৯. শেভরন ডায়াগনস্টিক সেন্টার'),
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (cnx){
-                  return D9();
-                }));
-              },
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+                title: Text('৯. শেভরন ডায়াগনস্টিক সেন্টার',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),),
+                trailing: Container(
+                  height: 50,
+                  width: 50,
+                  child: Image.asset('assets/d9_che.jpg',fit: BoxFit.cover,),),
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                    return D9();
+                  }));
+                },
+              ),
             ),
-          ),
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-              title: Text('১০. মেডিল্যাব ডায়াগনস্টিক অ্যান্ড কনসালটেশন ইউনিট'),
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (cnx){
-                  return D10();
-                }));
-              },
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+                title: Text('১০. মেডিল্যাব ডায়াগনস্টিক অ্যান্ড কনসালটেশন ইউনিট',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),),
+                trailing: Container(
+                  height: 50,
+                  width: 50,
+                  child: Image.asset('assets/d10_med.jpg',fit: BoxFit.cover,),),
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                    return D10();
+                  }));
+                },
+              ),
             ),
-          ),
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-              title: Text(""),
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+                title: Text(""),
+              ),
             ),
-          ),
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-              title: Text(""),
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+                title: Text(""),
+              ),
             ),
-          ),
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-              title: Text(""),
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+                title: Text(""),
+              ),
             ),
-          ),
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-              title: Text(""),
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+                title: Text(""),
+              ),
             ),
-          ),
-          Card(
-            color: Colors.white70,
-            child: ListTile(
-              title: Text(""),
+            Card(
+              color: Colors.white70,
+              child: ListTile(
+                title: Text(""),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
