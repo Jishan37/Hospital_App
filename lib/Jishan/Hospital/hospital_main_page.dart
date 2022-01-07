@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hospital_app/Jishan/Hospital/comilla_medical.dart';
+import 'package:hospital_app/Jishan/Hospital/comilla_sadar.dart';
+import 'package:hospital_app/Jishan/Hospital/tower.dart';
 
 class HospitalMainPage extends StatefulWidget {
   const HospitalMainPage({Key? key}) : super(key: key);
@@ -47,80 +49,101 @@ class _HospitalMainPageState extends State<HospitalMainPage> {
                 ),
               ),
             ),
-            Card(
-              color: Colors.white70,
-              child: ListTile(
-                title: Text("কুমিল্লা সদর হাসপাতাল",
-                  style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.red
+            InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                  return Comilla_sadar();
+                })) ;
+              },
+              child: Card(
+                color: Colors.white70,
+                child: ListTile(
+                  title: Text("কুমিল্লা সদর হাসপাতাল",
+                    style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.red
+                    ),
                   ),
-                ),
-                subtitle: Text("কুমিল্লা সদর, কুমিল্লা",
-                  style: TextStyle(
-                      fontSize: 13,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.green
+                  subtitle: Text("কুমিল্লা সদর, কুমিল্লা",
+                    style: TextStyle(
+                        fontSize: 13,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green
+                    ),
                   ),
-                ),
-                trailing: Container(
-                  height: 60,
-                  width: 60,
-                  child: Image.asset("assets/csh.jpg",
-                    fit: BoxFit.cover,
+                  trailing: Container(
+                    height: 60,
+                    width: 60,
+                    child: Image.asset("assets/csh.jpg",
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
               ),
             ),
-            Card(
-              color: Colors.white70,
-              child: ListTile(
-                title: Text("কুমিল্লা মেডিকেল সেন্টার (প্রা.) লি.",
-                  style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.red
+            InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                  return Tower();
+                })) ;
+              },
+              child: Card(
+                color: Colors.white70,
+                child: ListTile(
+                  title: Text("কুমিল্লা মেডিকেল সেন্টার (প্রা.) লি.(Tower)",
+                    style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.red
+                    ),
                   ),
-                ),
-                subtitle: Text("লাকসাম রোড,কুমিল্লা শিক্ষা বোর্ডের কাছে,কুমিল্লা",
-                  style: TextStyle(
-                      fontSize: 12.5,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.green
+                  subtitle: Text("লাকসাম রোড,কুমিল্লা শিক্ষা বোর্ডের কাছে,কুমিল্লা",
+                    style: TextStyle(
+                        fontSize: 12.5,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green
+                    ),
                   ),
+                  trailing: Container(
+                      height: 60,
+                      width: 60,
+                      child: Image.asset("assets/ct.jpg",
+                      fit: BoxFit.cover,
+                      )),
                 ),
-                trailing: Container(
-                    height: 60,
-                    width: 60,
-                    child: Image.asset("assets/ct.jpg",
-                    fit: BoxFit.cover,
-                    )),
               ),
             ),
-            Card(
-              color: Colors.white70,
-              child: ListTile(
-                title: Text("মুন হাসপাতাল লি.",
-                  style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.red
+            InkWell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                  return Tower();
+                })) ;
+              },
+              child: Card(
+                color: Colors.white70,
+                child: ListTile(
+                  title: Text("মুন হাসপাতাল লি.",
+                    style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.red
+                    ),
                   ),
-                ),
-                subtitle: Text("শহীদ খাজা নিজামউদ্দিন রোড,ঝাউতলা, কুমিল্লা",
-                  style: TextStyle(
-                      fontSize: 12.5,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.green
+                  subtitle: Text("শহীদ খাজা নিজামউদ্দিন রোড,ঝাউতলা, কুমিল্লা",
+                    style: TextStyle(
+                        fontSize: 12.5,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.green
+                    ),
                   ),
+                  trailing: Container(
+                      height: 60,
+                      width: 60,
+                      child: Image.asset("assets/cm.jpg",
+                      fit: BoxFit.cover,
+                      )),
                 ),
-                trailing: Container(
-                    height: 60,
-                    width: 60,
-                    child: Image.asset("assets/cm.jpg",
-                    fit: BoxFit.cover,
-                    )),
               ),
             ),
             Card(

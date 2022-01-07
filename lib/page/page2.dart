@@ -67,7 +67,7 @@ class _TwoState extends State<Two> {
       ),
       drawer: Drawer(
         child: Container(
-          color: Colors.red,
+          color: Colors.purple.shade100,
           child: Padding(
             padding: const EdgeInsets.all(10),
             child: ListView(
@@ -80,9 +80,9 @@ class _TwoState extends State<Two> {
                     ),
                     accountName: Text(''),
                     accountEmail: Text(''),
-                    arrowColor: Colors.green,
+                    arrowColor: Colors.green.shade100,
                     decoration: BoxDecoration(
-                      color: Colors.green,
+                      color: Colors.green.shade200,
                     ),
                   ),
                 ),

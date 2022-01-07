@@ -1,25 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-
-class Comilla_medical extends StatefulWidget {
-  const Comilla_medical({Key? key}) : super(key: key);
+class Comilla_sadar extends StatefulWidget {
+  const Comilla_sadar({Key? key}) : super(key: key);
 
   @override
-  _Comilla_medicalState createState() => _Comilla_medicalState();
+  _Comilla_sadarState createState() => _Comilla_sadarState();
 }
 
-class _Comilla_medicalState extends State<Comilla_medical> {
+class _Comilla_sadarState extends State<Comilla_sadar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //backgroundColor: Colors.orange.shade100,
       appBar: AppBar(
         backgroundColor: Colors.purple.shade100,
-        title: Text("কুমিল্লা মেডিকেল কলেজ হাসপাতাল",
+        title: Text("কুমিল্লা সদর হাসপাতাল",
           style: TextStyle(
             //color: Colors.red
-            fontWeight: FontWeight.w600
+              fontWeight: FontWeight.bold
           ),
         ),
       ),
@@ -32,8 +30,7 @@ class _Comilla_medicalState extends State<Comilla_medical> {
               margin: EdgeInsets.all(5),
               color: Colors.white60,
               child: Center(
-                child: Text("ঠিকানা: ডাঃ আখতার হামিদ খান রোড,"
-                    "\n              হাউজিং স্টেট, কুমিল্লা",
+                child: Text("লাকসাম রোড, কুমিল্লা",
                   style: TextStyle(
                       fontSize: 21,
                       fontWeight: FontWeight.bold,
@@ -47,8 +44,8 @@ class _Comilla_medicalState extends State<Comilla_medical> {
           /*Container(
             height: 200,
             width: 400,
-            child: Image.asset("assets/cmc.jpg",
-            fit: BoxFit.cover,
+            child: Image.asset("assets/csh.jpg",
+              fit: BoxFit.cover,
             ),
           ),*/
           SizedBox(height: 10,),
@@ -57,22 +54,22 @@ class _Comilla_medicalState extends State<Comilla_medical> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ElevatedButton(onPressed: (){
-                  launch('tel:77563');
-                }, child: Text("☎   ফোন: 77563",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20
-                  ),
-                )),
+launch('tel:');
+              }, child: Text("☎   ফোন:        ",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20
+                ),
+              )),
               SizedBox(width: 20,),
               ElevatedButton(onPressed: (){
-                  launch('https://goo.gl/maps/QjDqT6Ba7pfdeYyc7');
-                }, child: Text("📍  গুগল ম্যাপ ",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20
-                  ),
-                )),
+                launch('https://goo.gl/maps/NqU9amqaNjtWK6uF9');
+              }, child: Text("📍  গুগল ম্যাপ ",
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20
+                ),
+              )),
             ],
           )
         ],
