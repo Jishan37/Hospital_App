@@ -15,7 +15,7 @@ class _D1State extends State<D1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Labaid Ltd. Diagnostic, Cumilla',
+        title: Text('ল্যাবেইড লিমিটেড ডায়াগনস্টিক, কুমিল্লা',
         style: TextStyle(
           fontWeight: FontWeight.bold,
         ),),
@@ -30,10 +30,10 @@ class _D1State extends State<D1> {
           alignment: Alignment.topLeft,
           children: [
             Container(
-             // color: Colors.green,
-              height: 80,
+              //color: Colors.green,
+              height: 110,
               width: 400,
-              child: Text('\nAddress:\n2nd Kandirpar, Laksham Rd, Cumilla 3500',
+              child: Text('\nঠিকানা:\nটমসম ব্রিজ, ২য় কান্দিরপাড়, লাকসাম রোড, কুমিল্লা ৩৫০০',
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
@@ -41,12 +41,12 @@ class _D1State extends State<D1> {
               ),
             ),
             Align(
-              alignment: Alignment(-1,-0.4),
+              alignment: Alignment(-1,-0.1),
               child: Container(
                // color: Colors.grey,
-                height: 210,
-                width: 350,
-                child: Text('Hours:\nThursday	7:30AM–10:30PM\nFriday	7:30AM–10:30PM\nSaturday	7:30AM–10:30PM\nSunday	7:30AM–10:30PM\nMonday	7:30AM–10:30PM\nTuesday	7:30AM–10:30PM\nWednesday	7:30AM–10:30PM',
+                height: 220,
+                width: 400,
+                child: Text('সময়:\nশুক্রবার সকাল ৭:৩০ টা থেকে রাত ১০.৩০টা\nশনিবার ৭:৩০ টা থেকে রাত ১০.৩০টা\nরবিবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nসোমবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nমঙ্গলবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nববুধবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nবৃহস্পতিবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা',
                 style: TextStyle(
                   fontSize: 20,
                  // fontWeight: FontWeight.bold,
@@ -55,12 +55,12 @@ class _D1State extends State<D1> {
             ),
             ),
             Positioned(
-              height: 80,
+              height: 75,
               width: 250,
-              bottom: 135,
+              bottom: 75,
               child: Container(
                //color: Colors.blue,
-                child: Text('\nPhone: 01810-106277',
+                child: Text('\nফোন: 01810-106277',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
