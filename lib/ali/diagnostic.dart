@@ -37,6 +37,7 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
                title: Text('১. ল্যাবেইড লিমিটেড ডায়াগনস্টিক, কুমিল্লা শাখা',
                style: TextStyle(
                  fontWeight: FontWeight.bold,
+                 color: Colors.red,
                ),),
                 trailing: Container(
                   height: 50,
@@ -55,6 +56,7 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
                title: Text('২. কুমিল্লা সিটি স্ক্যান এমআরআই এন্ড স্পেশালাইজড ডায়াগনস্টিক সেন্টার',
                  style: TextStyle(
                    fontWeight: FontWeight.bold,
+                   color: Colors.green,
                  ),),
                 trailing: Container(
                   height: 50,
@@ -73,6 +75,7 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
                title: Text('৩. ইবনে সিনা ডায়াগনস্টিক ও কনসালটেশন সেন্টার',
                  style: TextStyle(
                    fontWeight: FontWeight.bold,
+                   color: Colors.red,
                  ),),
                 trailing: Container(
                   height: 50,
@@ -91,6 +94,7 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
                 title: Text('৪. কুমিল্লা ল্যাব সিটি',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    color: Colors.green,
                   ),),
                 trailing: Container(
                   height: 50,
@@ -109,6 +113,7 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
                 title: Text('৫. সিটি স্ক্যান পয়েন্ট কুমিল্লা',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    color: Colors.red,
                   ),),
                 trailing: Container(
                   height: 50,
@@ -127,6 +132,7 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
                 title: Text('৬. সানরাইজ ডায়াগনস্টিক এন্ড কনসালটেশন সেন্টার',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    color: Colors.green,
                   ),),
                 trailing: Container(
                   height: 50,
@@ -145,6 +151,7 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
                 title: Text('৭. কুমিল্লা হিউম্যান ডায়াগনস্টিক সেন্টার',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    color: Colors.red,
                   ),),
                 trailing: Container(
                   height: 50,
@@ -163,6 +170,7 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
                 title: Text('৮. অ্যাপোলো ডায়াগনস্টিক সেন্টার',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    color: Colors.green,
                   ),),
                 trailing: Container(
                   height: 50,
@@ -181,6 +189,7 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
                 title: Text('৯. শেভরন ডায়াগনস্টিক সেন্টার',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    color: Colors.red,
                   ),),
                 trailing: Container(
                   height: 50,
@@ -199,6 +208,7 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
                 title: Text('১০. মেডিল্যাব ডায়াগনস্টিক অ্যান্ড কনসালটেশন ইউনিট',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
+                    color: Colors.green,
                   ),),
                 trailing: Container(
                   height: 50,
