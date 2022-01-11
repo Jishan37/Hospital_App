@@ -4,6 +4,7 @@ import 'package:hospital_app/Jishan/Hospital/hospital_main_page.dart';
 import 'package:hospital_app/ali/diagnostic.dart';
 import 'package:hospital_app/ali/disease.dart';
 import 'package:hospital_app/kafi/bmi.dart';
+import 'package:hospital_app/kafi/homepage.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 
@@ -19,7 +20,7 @@ class _TwoState extends State<Two> {
   final screen=[
     HospitalMainPage(),
     DeaseasePage(),
-    DeaseasePage(),
+    HomePage(),
     DiagnosticPage(),
     DeaseasePage(),
   ];
