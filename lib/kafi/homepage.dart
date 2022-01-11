@@ -48,7 +48,8 @@ class _HomePageState extends State<HomePage> {
           height: 200,
           enlargeCenterPage: true,
           aspectRatio: 16/9,
-          autoPlayAnimationDuration: Duration(seconds: 2),
+          autoPlayAnimationDuration: Duration(seconds: 1),
+
 
 
         ),

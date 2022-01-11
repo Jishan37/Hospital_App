@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:hospital_app/Faiza/ambulace.dart';
 import 'package:hospital_app/Jishan/Hospital/hospital_main_page.dart';
 import 'package:hospital_app/ali/diagnostic.dart';
 import 'package:hospital_app/ali/disease.dart';
@@ -22,7 +23,7 @@ class _TwoState extends State<Two> {
     DeaseasePage(),
     HomePage(),
     DiagnosticPage(),
-    DeaseasePage(),
+    AmbulancePage(),
   ];
   @override
   Widget build(BuildContext context) {

@@ -65,7 +65,7 @@ class _D1State extends State<D1> {
                child: Column(
                  children: [
                    ElevatedButton(onPressed: (){
-                     launch('Call: 01810-106277');
+                     launch('tel: 01810-106277');
                    },
                        child: Text('ফোন: 01810-106277',
                        style: TextStyle(
