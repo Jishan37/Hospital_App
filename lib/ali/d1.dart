@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class D1 extends StatefulWidget {
   const D1({Key? key}) : super(key: key);
@@ -60,13 +61,27 @@ class _D1State extends State<D1> {
               width: 250,
               bottom: 70,
               child: Container(
-               //color: Colors.blue,
-                child: Text('\nফোন: 01810-106277',
+                //color: Colors.blue,
+               child: Column(
+                 children: [
+                   ElevatedButton(onPressed: (){
+                     launch('Call: 01810-106277');
+                   },
+                       child: Text('ফোন: 01810-106277',
+                       style: TextStyle(
+                         fontSize: 18,
+                         fontWeight: FontWeight.bold,
+                       ),),
+                   ),
+                 ],
+               ),
+                //color: Colors.blue,
+               /* child: Text('\nফোন: 01810-106277',
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
-                ),
+                ), */
             ),
             ),
           ],

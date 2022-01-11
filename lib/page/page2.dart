@@ -68,7 +68,7 @@ class _TwoState extends State<Two> {
       ),
       drawer: Drawer(
         child: Container(
-          color: Colors.purple.shade100,
+          color: Colors.red,
           child: Padding(
             padding: const EdgeInsets.all(10),
             child: ListView(
@@ -83,7 +83,7 @@ class _TwoState extends State<Two> {
                     accountEmail: Text(''),
                     arrowColor: Colors.green.shade100,
                     decoration: BoxDecoration(
-                      color: Colors.green.shade200,
+                      color: Colors.green,
                     ),
                   ),
                 ),
@@ -209,7 +209,7 @@ class _TwoState extends State<Two> {
               icon: Icon(MdiIcons.hospitalBuilding,
               size: 30,
               ),
-              title: Text('Hospitals',
+              title: Text('Hospital',
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold
