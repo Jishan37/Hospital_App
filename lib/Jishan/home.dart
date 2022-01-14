@@ -25,141 +25,155 @@ class _JASState extends State<JAS> {
               flex: 7,
               child: Row(
                 children: [
-                  Expanded(
-                      flex: 2,
-                      child: SingleChildScrollView(
-                        scrollDirection: Axis.vertical,
-                        child: Column(
-                          children: [
-                            Container(
-                              height: 100,
-                              width: 100,
-                              child: Card(
-                                child: Image.asset("assets/a1.jpg",
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              child: Card(
-                                child: Image.asset("assets/a9.jpg",
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              child: Card(
-                                child: Image.asset("assets/a3.jpg",
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              child: Card(
-                                child: Image.asset("assets/a4.jpg",
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              child: Card(
-                                child: Image.asset("assets/b2.jpg",
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              child: Card(
-                                child: Image.asset("assets/a5.jpg",
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              child: Card(
-                                child: Image.asset("assets/a6.jpg",
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              child: Card(
-                                child: Image.asset("assets/a7.jpg",
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              child: Card(
-                                child: Image.asset("assets/a8.jpg",
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              child: Card(
-                                child: Image.asset("assets/a10.jpg",
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              child: Card(
-                                child: Image.asset("assets/a11.jpg",
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              child: Card(
-                                child: Image.asset("assets/a12.jpg",
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              child: Card(
-                                child: Image.asset("assets/b1.jpg",
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                            Container(
-                              height: 100,
-                              width: 100,
-                              child: Card(
-                                child: Image.asset("assets/b2.jpg",
-                                  fit: BoxFit.fill,
-                                ),
-                              ),
-                            ),
-                          ],
+                  Column(
+                    children: [
+                      Container(
+                        height: 100,
+                        width: 100,
+                        child: Card(
+                          child: Image.asset("assets/down_arrow.png",
+                            fit: BoxFit.fill,
+                          ),
                         ),
-                      )
+                      ),
+                      SizedBox(height: 5),
+                      Expanded(
+                          flex: 2,
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.vertical,
+                            child: Column(
+                              children: [
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  child: Card(
+                                    child: Image.asset("assets/a1.jpg",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  child: Card(
+                                    child: Image.asset("assets/a9.jpg",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  child: Card(
+                                    child: Image.asset("assets/a3.jpg",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  child: Card(
+                                    child: Image.asset("assets/a4.jpg",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  child: Card(
+                                    child: Image.asset("assets/b2.jpg",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  child: Card(
+                                    child: Image.asset("assets/a5.jpg",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  child: Card(
+                                    child: Image.asset("assets/a6.jpg",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  child: Card(
+                                    child: Image.asset("assets/a7.jpg",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  child: Card(
+                                    child: Image.asset("assets/a8.jpg",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  child: Card(
+                                    child: Image.asset("assets/a10.jpg",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  child: Card(
+                                    child: Image.asset("assets/a11.jpg",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  child: Card(
+                                    child: Image.asset("assets/a12.jpg",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  child: Card(
+                                    child: Image.asset("assets/b1.jpg",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  child: Card(
+                                    child: Image.asset("assets/b3.png",
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          )
+                      ),
+                    ],
                   ),
                   SizedBox(width: 5,),
                   Expanded(
@@ -252,7 +266,7 @@ class _JASState extends State<JAS> {
                   options: CarouselOptions(
                     autoPlay: true,
                     autoPlayCurve: Curves.easeInOutCirc,
-                    height: 200,
+                    height: 180,
                     enlargeCenterPage: true,
                     aspectRatio: 16/9,
                     autoPlayAnimationDuration: Duration(seconds: 1),
