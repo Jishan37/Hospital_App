@@ -165,6 +165,7 @@ class _JASState extends State<JAS> {
                   Expanded(
                       flex: 6,
                       child: Container(
+                        margin: EdgeInsets.only(right: 7),
                         height: 500,
                         decoration: BoxDecoration(
                           image: DecorationImage(
