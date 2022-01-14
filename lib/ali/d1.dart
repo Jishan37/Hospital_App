@@ -27,13 +27,13 @@ class _D1State extends State<D1> {
       body: Container(
         height: 500,
         width: 400,
-        //color: Colors.redAccent,
+       // color: Colors.redAccent,
         child: Stack(
           alignment: Alignment.topLeft,
           children: [
             Container(
-              //color: Colors.green,
-              height: 110,
+             // color: Colors.green,
+              height: 115,
               width: 400,
               child: Text('\nঠিকানা:\nটমসম ব্রিজ, ২য় কান্দিরপাড়, লাকসাম রোড, কুমিল্লা ৩৫০০',
                 style: TextStyle(
@@ -46,7 +46,7 @@ class _D1State extends State<D1> {
               alignment: Alignment(-1,-0.1),
               child: Container(
                // color: Colors.grey,
-                height: 220,
+                height: 230,
                 width: 400,
                 child: Text('সময়:\nশুক্রবার সকাল ৭:৩০ টা থেকে রাত ১০.৩০টা\nশনিবার ৭:৩০ টা থেকে রাত ১০.৩০টা\nরবিবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nসোমবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nমঙ্গলবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nববুধবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nবৃহস্পতিবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা',
                 style: TextStyle(
@@ -59,15 +59,15 @@ class _D1State extends State<D1> {
             Positioned(
               height: 75,
               width: 250,
-              bottom: 70,
+              bottom: 60,
               child: Container(
-                //color: Colors.blue,
+                color: Colors.blue,
                child: Column(
                  children: [
                    ElevatedButton(onPressed: (){
                      launch('tel: 01810-106277');
                    },
-                       child: Text('ফোন: 01810-106277',
+                       child: Text('\nফোন: 01810-106277',
                        style: TextStyle(
                          fontSize: 18,
                          fontWeight: FontWeight.bold,

@@ -42,7 +42,7 @@ class _D3State extends State<D3> {
               alignment: Alignment(-1,-0.1),
               child: Container(
                 //color: Colors.grey,
-                height: 220,
+                height: 230,
                 width: 350,
                 child: Text('সময়:\nশুক্রবার সকাল ৭:৩০ টা থেকে রাত ১০ টা\nশনিবার ৭:৩০ টা থেকে রাত ১০ টা\nরবিবার সকাল ৭.৩০ টা থেকে রাত ১০ টা\nসোমবার সকাল ৭.৩০ টা থেকে রাত ১০ টা\nমঙ্গলবার সকাল ৭.৩০ টা থেকে রাত ১০ টা\nববুধবার সকাল ৭.৩০ টা থেকে রাত ১০ টা\nবৃহস্পতিবার সকাল ৭.৩০ টা থেকে রাত ১০ টা',
                   style: TextStyle(
@@ -55,9 +55,9 @@ class _D3State extends State<D3> {
             Positioned(
               height: 50,
               width: 250,
-              bottom: 105,
+              bottom: 90,
               child: Container(
-                //color: Colors.blue,
+                color: Colors.blue,
                 child: Text('\nফোন: 01841-212275',
                   style: TextStyle(
                     fontSize: 20,
