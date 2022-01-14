@@ -2,6 +2,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:hospital_app/Faiza/ambulace.dart';
 import 'package:hospital_app/Jishan/Hospital/hospital_main_page.dart';
+import 'package:hospital_app/Jishan/home.dart';
 import 'package:hospital_app/ali/diagnostic.dart';
 import 'package:hospital_app/ali/disease.dart';
 import 'package:hospital_app/kafi/bmi.dart';
@@ -21,7 +22,7 @@ class _TwoState extends State<Two> {
   final screen=[
     HospitalMainPage(),
     DeaseasePage(),
-    HomePage(),
+    JAS(),
     DiagnosticPage(),
     AmbulancePage(),
   ];
@@ -208,11 +209,11 @@ class _TwoState extends State<Two> {
         items: [
           BottomNavyBarItem(
               icon: Icon(MdiIcons.hospitalBuilding,
-              size: 30,
+              size: 28,
               ),
               title: Text('Hospital',
               style: TextStyle(
-                fontSize: 16,
+                fontSize: 15.5,
                 fontWeight: FontWeight.bold
               ),
               ),
@@ -221,11 +222,11 @@ class _TwoState extends State<Two> {
           ),
           BottomNavyBarItem(
               icon: Icon(MdiIcons.skull,
-                size: 30,
+                size: 28,
               ),
               title: Text('Disease',
                 style: TextStyle(
-                    fontSize: 15
+                    fontSize: 15.5
                 ),
               ),
               activeColor: Colors.red,
@@ -233,11 +234,11 @@ class _TwoState extends State<Two> {
           ),
           BottomNavyBarItem(
               icon: Icon(MdiIcons.homeCircle,
-                size: 30,
+                size: 28,
               ),
-              title: Text('home',
+              title: Text('Home',
                 style: TextStyle(
-                    fontSize: 15
+                    fontSize: 15.5
                 ),
               ),
               activeColor: Colors.green,
@@ -245,11 +246,11 @@ class _TwoState extends State<Two> {
           ),
           BottomNavyBarItem(
               icon: Icon(MdiIcons.officeBuildingOutline,
-                size: 30,
+                size: 28,
               ),
               title: Text('Diagnostic',
                 style: TextStyle(
-                    fontSize: 15
+                    fontSize: 15.5
                 ),
               ),
               activeColor: Colors.orange,
@@ -257,11 +258,12 @@ class _TwoState extends State<Two> {
           ),
           BottomNavyBarItem(
               icon: Icon(MdiIcons.ambulance,
-                size: 30,
+                size: 28,
               ),
               title: Text('Ambulance',
                 style: TextStyle(
-                    fontSize: 15
+                    fontSize: 14,
+                  fontWeight: FontWeight.w700
                 ),
               ),
               activeColor: Colors.green,
