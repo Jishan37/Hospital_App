@@ -172,7 +172,7 @@ class _JASState extends State<JAS> {
                               image: AssetImage("assets/home1.png",
                               ),
                           ),
-                          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30))
+                          borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30),topRight: Radius.circular(30))
                         ),
                       )
                   )
