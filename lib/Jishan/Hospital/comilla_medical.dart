@@ -58,16 +58,16 @@ class _Comilla_medicalState extends State<Comilla_medical> {
             children: [
               ElevatedButton(onPressed: (){
                   launch('tel:77563');
-                }, child: Text("☎   ফোন: 77563",
+                }, child: Text("☎ ফোন: 77563",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20
                   ),
                 )),
-              SizedBox(width: 20,),
+              SizedBox(width: 15,),
               ElevatedButton(onPressed: (){
                   launch('https://goo.gl/maps/QjDqT6Ba7pfdeYyc7');
-                }, child: Text("📍  গুগল ম্যাপ ",
+                }, child: Text("📍 গুগল ম্যাপ ",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20
