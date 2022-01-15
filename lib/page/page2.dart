@@ -275,7 +275,7 @@ class _TwoState extends State<Two> {
                   ),
                 ),
                 activeColor: Colors.green,
-                inactiveColor: Colors.red
+                inactiveColor: Colors.blueAccent,
             ),
           ],
         ),
