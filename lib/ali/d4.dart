@@ -63,10 +63,12 @@ class _D4State extends State<D4> {
                     ElevatedButton(onPressed: (){
                       launch('tel: 01970-404202');
                     },
-                        child: Text('\nফোন: 01970-404202',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                        child: Center(
+                          child: Text('\nফোন: 01970-404202',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),),
                   ],

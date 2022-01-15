@@ -63,10 +63,12 @@ class _D10State extends State<D10> {
                     ElevatedButton(onPressed: (){
 
                     },
-                        child: Text('\nফোন: ',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                        child: Center(
+                          child: Text('\nফোন: ',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),)
                   ],

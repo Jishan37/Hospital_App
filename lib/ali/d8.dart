@@ -63,10 +63,12 @@ class _D8State extends State<D8> {
                     ElevatedButton(onPressed: (){
                       launch('tel: 01733-499904');
                     },
-                        child: Text('\nফোন: 01733-499904',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                        child: Center(
+                          child: Text('\nফোন: 01733-499904',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),),
                   ],

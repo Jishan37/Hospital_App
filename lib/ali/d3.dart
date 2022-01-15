@@ -63,10 +63,12 @@ class _D3State extends State<D3> {
                     ElevatedButton(onPressed: (){
                       launch('tel: 01841-212275');
                     },
-                        child: Text('\nফোন: 01841-212275',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                        child: Center(
+                          child: Text('\nফোন: 01841-212275',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),),
                   ],

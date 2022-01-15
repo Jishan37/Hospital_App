@@ -63,10 +63,12 @@ class _D5State extends State<D5> {
                     ElevatedButton(onPressed: (){
                       launch('tel: 0817-3973');
                     },
-                        child: Text('\nফোন: 0817-3973',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                        child: Center(
+                          child: Text('\nফোন: 0817-3973',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),),
                   ],

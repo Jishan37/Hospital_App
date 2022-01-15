@@ -67,11 +67,13 @@ class _D1State extends State<D1> {
                    ElevatedButton(onPressed: (){
                      launch('tel: 01810-106277');
                    },
-                       child: Text('\nফোন: 01810-106277',
-                       style: TextStyle(
-                         fontSize: 18,
-                         fontWeight: FontWeight.bold,
-                       ),),
+                       child: Center(
+                         child: Text('\nফোন: 01810-106277',
+                         style: TextStyle(
+                           fontSize: 18,
+                           fontWeight: FontWeight.bold,
+                         ),),
+                       ),
                    ),
                  ],
                ),

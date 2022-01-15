@@ -63,10 +63,12 @@ class _D9State extends State<D9> {
                     ElevatedButton(onPressed: (){
                       launch('tel: 01715-503718');
                     },
-                        child: Text('\nফোন: 01715-503718',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
+                        child: Center(
+                          child: Text('\nফোন: 01715-503718',
+                            style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),),
                   ],
