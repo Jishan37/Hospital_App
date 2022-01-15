@@ -221,36 +221,7 @@ class _DiagnosticPageState extends State<DiagnosticPage> {
                 },
               ),
             ),
-            Card(
-              color: Colors.white70,
-              child: ListTile(
-                title: Text(""),
-              ),
-            ),
-            Card(
-              color: Colors.white70,
-              child: ListTile(
-                title: Text(""),
-              ),
-            ),
-            Card(
-              color: Colors.white70,
-              child: ListTile(
-                title: Text(""),
-              ),
-            ),
-            Card(
-              color: Colors.white70,
-              child: ListTile(
-                title: Text(""),
-              ),
-            ),
-            Card(
-              color: Colors.white70,
-              child: ListTile(
-                title: Text(""),
-              ),
-            ),
+
           ],
         ),
       ),

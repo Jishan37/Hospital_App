@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class D7 extends StatefulWidget {
   const D7({Key? key}) : super(key: key);
@@ -42,7 +43,7 @@ class _D7State extends State<D7> {
               alignment: Alignment(-1,-0.1),
               child: Container(
                // color: Colors.grey,
-                height: 220,
+                height: 230,
                 width: 350,
                 child: Text('সময়:\nশুক্রবার সকাল ৭টা থেকে রাত ১২টা\nশনিবার সকাল ৭টা থেকে রাত ১২টা\nরবিবার সকাল ৭টা থেকে রাত ১২টা\nসোমবার সকাল ৭টা থেকে রাত ১২টা\nমঙ্গলবার সকাল ৭টা থেকে রাত ১২টা\nবুধবার সকাল ৭টা থেকে রাত ১২টা\nবৃহস্পতিবার সকাল ৭টা থেকে রাত ১২টা',
                   style: TextStyle(
@@ -55,14 +56,21 @@ class _D7State extends State<D7> {
             Positioned(
               height: 50,
               width: 250,
-              bottom: 105,
+              bottom: 95,
               child: Container(
-               // color: Colors.blue,
-                child: Text('\nফোন: 01715-022404',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
+                // color: Colors.blue,
+                child: Column(
+                  children: [
+                    ElevatedButton(onPressed: (){
+                      launch('tel: 01715-022404');
+                    },
+                        child: Text('\nফোন: 01715-022404',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),),
+                  ],
                 ),
               ),
             ),

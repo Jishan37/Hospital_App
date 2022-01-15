@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class D2 extends StatefulWidget {
   const D2({Key? key}) : super(key: key);
@@ -23,12 +24,12 @@ class _D2State extends State<D2> {
       body: Container(
         height: 500,
         width: 400,
-        color: Colors.redAccent,
+        //color: Colors.redAccent,
         child: Stack(
           alignment: Alignment.topLeft,
           children: [
             Container(
-               color: Colors.green,
+               //color: Colors.green,
               height: 110,
               width: 400,
               child: Text('\nঠিকানা:\nফাতেমা জাহানারা টাওয়ার, শহীদ খাজা নিজামউদ্দীন রোড, কুমিল্লা',
@@ -41,7 +42,7 @@ class _D2State extends State<D2> {
             Align(
               alignment: Alignment(-1,-0.1),
               child: Container(
-                color: Colors.grey,
+               // color: Colors.grey,
                 height: 230,
                 width: 350,
                 child: Text('সময়:\nশুক্রবার সকাল ৮টা থেকে রাত ৮টা\nশনিবার সকাল ৮টা থেকে রাত ৮টা\nরবিবার সকাল ৮টা থেকে রাত ৮টা\nসোমবার সকাল ৮টা থেকে রাত ৮টা\nমঙ্গলবার সকাল ৮টা থেকে রাত ৮টা\nবুধবার সকাল ৮টা থেকে রাত ৮টা\nবৃহস্পতিবার সকাল ৮টা থেকে রাত ৮টা',
@@ -57,12 +58,19 @@ class _D2State extends State<D2> {
               width: 250,
               bottom: 90,
               child: Container(
-                color: Colors.blue,
-                child: Text('\nফোন: 0817-3986',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
+                //color: Colors.blue,
+                child: Column(
+                  children: [
+                    ElevatedButton(onPressed: (){
+                      launch('tel: 0817-3986');
+                    },
+                        child: Text('\nফোন: 0817-3986',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),),
+                ],
                 ),
               ),
             ),

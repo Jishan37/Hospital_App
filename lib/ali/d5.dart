@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class D5 extends StatefulWidget {
   const D5({Key? key}) : super(key: key);
@@ -27,7 +28,7 @@ class _D5State extends State<D5> {
           alignment: Alignment.topLeft,
           children: [
             Container(
-             // color: Colors.green,
+              //color: Colors.green,
               height: 100,
               width: 400,
               child: Text('\nঠিকানা:\nস্কয়ার কুমিল্লা অফিস রোড, কুমিল্লা',
@@ -38,10 +39,10 @@ class _D5State extends State<D5> {
               ),
             ),
             Align(
-              alignment: Alignment(-1,-0.3),
+              alignment: Alignment(-1,-0.2),
               child: Container(
-               // color: Colors.grey,
-                height: 220,
+                //color: Colors.grey,
+                height: 235,
                 width: 350,
                 child: Text('সময়:\nশুক্রবার ২৪ ঘন্টা খোলা\nশনিবার ২৪ ঘন্টা খোলা\nরবিবার ২৪ ঘন্টা খোলা\nসোমবার ২৪ ঘন্টা খোলা\nমঙ্গলবার ২৪ ঘন্টা খোলা\nবুধবার ২৪ ঘন্টা খোলা\nবৃহস্পতিবার ২৪ ঘন্টা খোলা',
                   style: TextStyle(
@@ -52,16 +53,23 @@ class _D5State extends State<D5> {
               ),
             ),
             Positioned(
-              height: 50,
+              height: 55,
               width: 250,
-              bottom: 110,
+              bottom: 95,
               child: Container(
-               // color: Colors.blue,
-                child: Text('\nফোন: 0817-3973',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
+                //color: Colors.blue,
+                child: Column(
+                  children: [
+                    ElevatedButton(onPressed: (){
+                      launch('tel: 0817-3973');
+                    },
+                        child: Text('\nফোন: 0817-3973',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),),
+                  ],
                 ),
               ),
             ),

@@ -48,7 +48,7 @@ class _D1State extends State<D1> {
                // color: Colors.grey,
                 height: 230,
                 width: 400,
-                child: Text('সময়:\nশুক্রবার সকাল ৭:৩০ টা থেকে রাত ১০.৩০টা\nশনিবার ৭:৩০ টা থেকে রাত ১০.৩০টা\nরবিবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nসোমবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nমঙ্গলবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nববুধবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nবৃহস্পতিবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা',
+                child: Text('সময়:\nশুক্রবার সকাল ৭:৩০ টা থেকে রাত ১০.৩০টা\nশনিবার ৭:৩০ টা থেকে রাত ১০.৩০টা\nরবিবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nসোমবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nমঙ্গলবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nবুধবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা\nবৃহস্পতিবার সকাল ৭.৩০ টা থেকে রাত ১০.৩০টা',
                 style: TextStyle(
                   fontSize: 20,
                  // fontWeight: FontWeight.bold,
@@ -61,7 +61,7 @@ class _D1State extends State<D1> {
               width: 250,
               bottom: 60,
               child: Container(
-                color: Colors.blue,
+                //color: Colors.blue,
                child: Column(
                  children: [
                    ElevatedButton(onPressed: (){
@@ -75,13 +75,6 @@ class _D1State extends State<D1> {
                    ),
                  ],
                ),
-                //color: Colors.blue,
-               /* child: Text('\nফোন: 01810-106277',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-                ), */
             ),
             ),
           ],

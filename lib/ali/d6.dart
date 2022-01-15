@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class D6 extends StatefulWidget {
   const D6({Key? key}) : super(key: key);
@@ -53,16 +54,23 @@ class _D6State extends State<D6> {
               ),
             ),
             Positioned(
-              height: 50,
+              height: 55,
               width: 250,
               bottom: 110,
               child: Container(
                 // color: Colors.blue,
-                child: Text('\nফোন: 01755-625377',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
+                child: Column(
+                  children: [
+                    ElevatedButton(onPressed: (){
+                      launch('tel: 01755-625377');
+                    },
+                        child: Text('\nফোন: 01755-625377',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),),
+                  ],
                 ),
               ),
             ),
