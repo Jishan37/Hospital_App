@@ -148,21 +148,7 @@ class _DeaseasePageState extends State<DeaseasePage> {
             ),
             ListTile(
               shape: Border.all(color: Colors.lightGreen),
-              title: Text('হাঁড় জোড়া, বাতজ্বর, প্যারালাইসিস, মেরুদণ্ড',
-                style: TextStyle(
-                  fontSize: 20,
-                ),
-              ),
-              onTap: (){
-                Navigator.push(context, MaterialPageRoute(builder: (cnx){
-                  return Dis9();
-                }));
-              },
-            ),
-
-            ListTile(
-              shape: Border.all(color: Colors.lightGreen),
-              title: Text('ক্যান্সার',
+              title: Text('ক্যান্সার বিশেষজ্ঞ',
                 style: TextStyle(
                   fontSize: 20,
                 ),
@@ -201,12 +187,16 @@ class _DeaseasePageState extends State<DeaseasePage> {
             ),
             ListTile(
               shape: Border.all(color: Colors.lightGreen),
-              title: Text('ক্যান্সার',
+              title: Text('হাঁড় জোড়া, বাতজ্বর, প্যারালাইসিস, মেরুদণ্ড',
                 style: TextStyle(
                   fontSize: 20,
                 ),
               ),
-              onTap: (){},
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (cnx){
+                  return Dis9();
+                }));
+              },
             ),
           ],
         ),
