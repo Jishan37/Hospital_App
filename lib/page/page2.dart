@@ -1,5 +1,7 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:hospital_app/Faiza/about.dart';
+import 'package:hospital_app/Faiza/faq.dart';
 import 'package:hospital_app/Jishan/Hospital/hospital_main_page.dart';
 import 'package:hospital_app/Jishan/home.dart';
 import 'package:hospital_app/ali/amb.dart';
@@ -161,7 +163,7 @@ class _TwoState extends State<Two> {
                   Card(
                     child: ListTile(
                       onTap: (){
-                        // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                         Navigator.push(context, MaterialPageRoute(builder: (cnx)=>About_Page()));
                       },
                       leading: Icon(Icons.account_box_outlined,size: 30,color: Colors.black87),
                       title: Text('About',style: TextStyle(fontSize: 20,color: Colors.black87,fontWeight: FontWeight.bold),),
@@ -170,7 +172,7 @@ class _TwoState extends State<Two> {
                   Card(
                     child: ListTile(
                       onTap: (){
-                        // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                         Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Faq_Page()));
                       },
                       leading: Icon(Icons.question_answer_outlined,size: 30,color: Colors.black87),
                       title: Text('Faq',style: TextStyle(fontSize: 20,color: Colors.black87,fontWeight: FontWeight.bold),),
