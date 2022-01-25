@@ -12,13 +12,16 @@ class _sbpState extends State<sbp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.purple[100],
       appBar: AppBar(
+        backgroundColor: Colors.purple,
         title: Text("স্বাস্থ্য বিষয়ক পরামর্শ",
           style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 22
           ),
         ),
+        centerTitle: true,
       ),
       body: Padding(
         padding: const EdgeInsets.all(10),
