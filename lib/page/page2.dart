@@ -50,10 +50,15 @@ class _TwoState extends State<Two> {
           leading: Builder(
             builder: (context){
               return IconButton(onPressed: ()=>Scaffold.of(context).openDrawer(),
-              icon: Card(
-                color: Colors.black54,
-                child: Icon(MdiIcons.segment,
-                  size: 32,
+              icon: Container(
+                height: 150,
+                width: 150,
+                child: Card(
+                  color: Colors.black54,
+                  child: Icon(MdiIcons.segment,
+                    size: 32,
+                    color: Colors.white60,
+                  ),
                 ),
               ),
               );
@@ -76,7 +81,7 @@ class _TwoState extends State<Two> {
         ),
         drawer: Drawer(
           child: Container(
-            color: Colors.red.shade400,
+            color: Colors.orange.shade100,
             child: Padding(
               padding: const EdgeInsets.all(8),
               child: ListView(
@@ -93,11 +98,8 @@ class _TwoState extends State<Two> {
 
                     ),*/
                     height: 160,
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                          fit: BoxFit.fitWidth,
-                            image: AssetImage("assets/home6.jpg")),
-                        borderRadius: BorderRadius.only(bottomRight: Radius.circular(20),topLeft: Radius.circular(20))
+                    child: Image.asset("assets/hospito.png",
+                    fit: BoxFit.fill,
                     ),
                   ),
                   SizedBox(height: 7,),
@@ -279,7 +281,7 @@ class _TwoState extends State<Two> {
                   ),
                 ),
                 activeColor: Colors.green,
-                inactiveColor: Colors.red
+                inactiveColor: Colors.blue
             ),
           ],
         ),
