@@ -128,7 +128,7 @@ class _TwoState extends State<Two> {
                   Card(
                     child: ListTile(
                       onTap: (){
-                        // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                         Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Ambulance_Page()));
                       },
                       leading: Icon(MdiIcons.ambulance,size: 30,color: Colors.green),
                       title: Text('অ্যাম্বুলেন্স সার্ভিস',style: TextStyle(fontSize: 20,color: Colors.red,fontWeight: FontWeight.bold),),
