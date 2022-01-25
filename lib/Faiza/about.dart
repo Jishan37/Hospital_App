@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hospital_app/Jishan/Hospital/tower.dart';
 
 class About_Page extends StatefulWidget {
   const About_Page({Key? key}) : super(key: key);
@@ -13,7 +14,13 @@ class _About_PageState extends State<About_Page> {
     return Scaffold(
       backgroundColor: Colors.purple.shade100,
       appBar: AppBar(
-        title: Text('About'),
+        backgroundColor: Colors.purple,
+        title: Text('About',
+        style: TextStyle(
+          fontSize: 30
+        ),
+        ),
+        centerTitle: true,
       ),
       body: Padding(
         padding: const EdgeInsets.all(9.0),
@@ -45,7 +52,7 @@ class _About_PageState extends State<About_Page> {
                   child: Text('১. হাসপাতালের নাম সহ ঠিকানা দেখতে পাবেন এবং হাসপাতালের নাম্বারে '
                       'কল করে তথ্য জানতে পারবেন সাথে গুগল ম্যাপের সাহায্যে হাসপাতালের অবস্থান দেখতে পারবেন।\n'
                     '২. ডায়াগনস্টিক সেন্টার অন্তর্ভুক্ত করা হয়েছে যেখানে ব্যবহারকরী ঠিকানা, নাম্বার পেয়ে যাবেন  '
-                      'এবং সপ্তাহের দিন গুলোতো কখন খোলা- বন্ধ থাকে তা খুব সহজেই জানতে পারবেন\n'
+                      'এবং সপ্তাহের দিন গুলোতো কখন খোলা- বন্ধ থাকে তা খুব সহজেই জানতে পারবেন।\n'
                       '৩. রোগের লিস্টে ব্যবহারকারী তার সমস্যা বাছাই করে ডাক্তার লিস্ট দেখতে পাবেন এবং  '
                       'পাশাপাশি কল করে ডাক্তারের সাথে কথা বলা অথবা সিরিয়াল নিতে পারবেন।\n'
                     '৪. এম্বুল্যান্স এর নাম্বার দেখে প্রয়োজন অনুযায়ী যোগাযোগ করতে পারবেন।\n'
