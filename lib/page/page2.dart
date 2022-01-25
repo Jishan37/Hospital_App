@@ -4,6 +4,7 @@ import 'package:hospital_app/Faiza/about.dart';
 import 'package:hospital_app/Faiza/faq.dart';
 import 'package:hospital_app/Jishan/Hospital/hospital_main_page.dart';
 import 'package:hospital_app/Jishan/home.dart';
+import 'package:hospital_app/Jishan/shastho_bishoyok.dart';
 import 'package:hospital_app/ali/amb.dart';
 import 'package:hospital_app/ali/diagnostic.dart';
 import 'package:hospital_app/ali/disease.dart';
@@ -149,10 +150,10 @@ class _TwoState extends State<Two> {
                   Card(
                     child: ListTile(
                       onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Poramorsho_Page()));
+                        Navigator.push(context, MaterialPageRoute(builder: (cnx)=>sbp()));
                       },
                       leading: Icon(MdiIcons.textBox,size: 30,color: Colors.green),
-                      title: Text('পরামর্শ',style: TextStyle(fontSize: 20,color: Colors.red,fontWeight: FontWeight.bold),),
+                      title: Text('স্বাস্থ্য বিষয়ক পরামর্শ',style: TextStyle(fontSize: 20,color: Colors.red,fontWeight: FontWeight.bold),),
                     ),
                   ),
                   Card(
