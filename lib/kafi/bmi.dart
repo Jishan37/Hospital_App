@@ -14,10 +14,10 @@ class _BMI_PageState extends State<BMI_Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.orange[400],
+      backgroundColor: Colors.purple[100],
       appBar: AppBar(title: Text('বিএমআই (BMI)',style: TextStyle(fontSize: 26),),
         centerTitle: true,
-        backgroundColor: Colors.deepOrange,),
+        backgroundColor: Colors.purple,),
 
       body: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -25,7 +25,7 @@ class _BMI_PageState extends State<BMI_Page> {
 
           children: [
             Card(
-              color: Colors.blue[200],
+              color: Colors.grey[200],
               child: Text(' less than 18.50      ->     Underweight',
               style: TextStyle(fontSize: 23),
               ),
