@@ -9,6 +9,7 @@ import 'package:hospital_app/ali/diagnostic.dart';
 import 'package:hospital_app/ali/disease.dart';
 import 'package:hospital_app/kafi/bmi.dart';
 import 'package:hospital_app/kafi/homepage.dart';
+import 'package:hospital_app/kafi/poramorsho.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 
@@ -148,7 +149,7 @@ class _TwoState extends State<Two> {
                   Card(
                     child: ListTile(
                       onTap: (){
-                        // Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Hospital_page()));
+                        Navigator.push(context, MaterialPageRoute(builder: (cnx)=>Poramorsho_Page()));
                       },
                       leading: Icon(MdiIcons.textBox,size: 30,color: Colors.green),
                       title: Text('পরামর্শ',style: TextStyle(fontSize: 20,color: Colors.red,fontWeight: FontWeight.bold),),
