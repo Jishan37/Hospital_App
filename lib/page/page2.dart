@@ -74,13 +74,10 @@ class _TwoState extends State<Two> {
                         icon: Container(
                           height: 200,
                           width: 300,
-                          child: Card(
-                            color: Colors.black54,
                             child: Icon(Icons.search,
-                              size: 26,
+                              size: 36,
                               color: Colors.white60,
                             ),
-                          ),
                         ),);
                   }
               ),
