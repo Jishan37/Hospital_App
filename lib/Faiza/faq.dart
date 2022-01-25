@@ -11,6 +11,12 @@ class _Faq_PageState extends State<Faq_Page> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.purple[100],
+      appBar: AppBar(
+        backgroundColor: Colors.purple,
+        title: Text('FAQ',style: TextStyle(fontSize: 26),),
+        centerTitle: true,
+      ),
       body: Padding(
         padding: const EdgeInsets.only(top: 55.0,left: 10.0,right: 10.0),
         child: Container(

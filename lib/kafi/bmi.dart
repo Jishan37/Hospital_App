@@ -25,7 +25,7 @@ class _BMI_PageState extends State<BMI_Page> {
 
           children: [
             Card(
-              color: Colors.grey[200],
+              color: Colors.blue[200],
               child: Text(' less than 18.50      ->     Underweight',
               style: TextStyle(fontSize: 23),
               ),
@@ -57,7 +57,7 @@ class _BMI_PageState extends State<BMI_Page> {
             Padding(
               padding: const EdgeInsets.only(left: 50.0,right: 50),
               child: Card(
-                color: Colors.grey,
+                color: Colors.blue[200],
                 child: Center(
                   child: Text(
                     _result==null? "Enter Value: ":'${_result.toStringAsFixed(2)}',

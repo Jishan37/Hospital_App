@@ -36,14 +36,14 @@ class _TwoState extends State<Two> {
       aspectRatio: 16/9,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.grey.shade300,
+          backgroundColor: Colors.purple,
           title: Center(
             child: Text('HOSPITO',
               style: TextStyle(
                   fontSize: 40,
                   fontFamily: 'jas',
                   fontWeight: FontWeight.bold,
-                  color: Colors.red
+
               ),
             )
           ),
@@ -70,10 +70,17 @@ class _TwoState extends State<Two> {
               child: Builder(
                   builder: (context){
                     return IconButton(onPressed: ()=>Scaffold.of(context).openEndDrawer(),
-                        icon: Icon(Icons.search,
-                          color: Colors.black54,
-                          size: 40,
-                        ));
+                        icon: Container(
+                          height: 200,
+                          width: 300,
+                          child: Card(
+                            color: Colors.black54,
+                            child: Icon(Icons.search,
+                              size: 26,
+                              color: Colors.white60,
+                            ),
+                          ),
+                        ),);
                   }
               ),
             )
@@ -81,7 +88,7 @@ class _TwoState extends State<Two> {
         ),
         drawer: Drawer(
           child: Container(
-            color: Colors.orange.shade100,
+            color: Colors.purple[100],
             child: Padding(
               padding: const EdgeInsets.all(8),
               child: ListView(
@@ -187,20 +194,23 @@ class _TwoState extends State<Two> {
           ),
         ),
         endDrawer: Drawer(
-          child: Align(
-            alignment: Alignment(.1,-.8),
-            child: Padding(
-              padding: const EdgeInsets.all(13),
-              child: Container(
-                child: TextField(
-                  decoration: InputDecoration(
-                    hintText:'Search',
-                      hintStyle: TextStyle(
-                      fontSize: 20,
-                  ),
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(20)
-                    )
+          child: Container(
+            color: Colors.purple[100],
+            child: Align(
+              alignment: Alignment(.1,-.8),
+              child: Padding(
+                padding: const EdgeInsets.all(13),
+                child: Container(
+                  child: TextField(
+                    decoration: InputDecoration(
+                      hintText:'Search',
+                        hintStyle: TextStyle(
+                        fontSize: 20,
+                    ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20)
+                      )
+                    ),
                   ),
                 ),
               ),
@@ -231,8 +241,8 @@ class _TwoState extends State<Two> {
                   fontWeight: FontWeight.bold
                 ),
                 ),
-                activeColor: Colors.red,
-                inactiveColor: Colors.blueAccent
+                activeColor: Colors.purple,
+                inactiveColor: Colors.red
             ),
             BottomNavyBarItem(
                 icon: Icon(MdiIcons.skull,
@@ -243,8 +253,8 @@ class _TwoState extends State<Two> {
                       fontSize: 15.5
                   ),
                 ),
-                activeColor: Colors.red,
-                inactiveColor: Colors.red
+                activeColor: Colors.purple,
+                inactiveColor: Colors.green
             ),
             BottomNavyBarItem(
                 icon: Icon(MdiIcons.homeCircle,
@@ -255,7 +265,7 @@ class _TwoState extends State<Two> {
                       fontSize: 15.5
                   ),
                 ),
-                activeColor: Colors.green,
+                activeColor: Colors.purple,
                 inactiveColor: Colors.red
             ),
             BottomNavyBarItem(
@@ -267,8 +277,8 @@ class _TwoState extends State<Two> {
                       fontSize: 15.5
                   ),
                 ),
-                activeColor: Colors.orange,
-                inactiveColor: Colors.red
+                activeColor: Colors.purple,
+                inactiveColor: Colors.green
             ),
             BottomNavyBarItem(
                 icon: Icon(MdiIcons.ambulance,
@@ -280,8 +290,8 @@ class _TwoState extends State<Two> {
                     fontWeight: FontWeight.w700
                   ),
                 ),
-                activeColor: Colors.green,
-                inactiveColor: Colors.blue
+                activeColor: Colors.purple,
+                inactiveColor: Colors.red
             ),
           ],
         ),
