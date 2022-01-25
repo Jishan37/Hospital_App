@@ -29,7 +29,7 @@ class _OneState extends State<One> {
           Center(
             child: CircularProgressIndicator(
               valueColor: AlwaysStoppedAnimation(Colors.cyan),
-              backgroundColor: Colors.orange,
+              //backgroundColor: Colors.orange,
               strokeWidth: 5,
             ),
           )
