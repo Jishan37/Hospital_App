@@ -76,7 +76,7 @@ class _TwoState extends State<Two> {
                           width: 300,
                             child: Icon(Icons.search,
                               size: 36,
-                              color: Colors.white60,
+                              color: Colors.black,
                             ),
                         ),);
                   }
@@ -239,7 +239,7 @@ class _TwoState extends State<Two> {
                   fontWeight: FontWeight.bold
                 ),
                 ),
-                activeColor: Colors.purple,
+                activeColor: Colors.blue,
                 inactiveColor: Colors.red
             ),
             BottomNavyBarItem(
@@ -251,7 +251,7 @@ class _TwoState extends State<Two> {
                       fontSize: 15.5
                   ),
                 ),
-                activeColor: Colors.purple,
+                activeColor: Colors.blue,
                 inactiveColor: Colors.green
             ),
             BottomNavyBarItem(
@@ -263,7 +263,7 @@ class _TwoState extends State<Two> {
                       fontSize: 15.5
                   ),
                 ),
-                activeColor: Colors.purple,
+                activeColor: Colors.blue,
                 inactiveColor: Colors.red
             ),
             BottomNavyBarItem(
@@ -275,7 +275,7 @@ class _TwoState extends State<Two> {
                       fontSize: 15.5
                   ),
                 ),
-                activeColor: Colors.purple,
+                activeColor: Colors.blue,
                 inactiveColor: Colors.green
             ),
             BottomNavyBarItem(
@@ -288,7 +288,7 @@ class _TwoState extends State<Two> {
                     fontWeight: FontWeight.w700
                   ),
                 ),
-                activeColor: Colors.purple,
+                activeColor: Colors.blue,
                 inactiveColor: Colors.red
             ),
           ],

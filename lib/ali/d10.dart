@@ -21,6 +21,7 @@ class _D10State extends State<D10> {
         foregroundColor: Colors.black,
       ),
       body: Container(
+        padding: EdgeInsets.all(8.0),
         height: 500,
         width: 400,
         //color: Colors.redAccent,

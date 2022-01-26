@@ -13,10 +13,11 @@ class _About_PageState extends State<About_Page> {
     return Scaffold(
       backgroundColor: Colors.purple.shade100,
       appBar: AppBar(
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.grey[300],
         title: Text('About',
           style: TextStyle(
-              fontSize: 30
+              fontSize: 30,
+            color: Colors.red
           ),
         ),
         centerTitle: true,

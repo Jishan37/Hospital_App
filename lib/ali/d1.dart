@@ -27,6 +27,7 @@ class _D1State extends State<D1> {
       body: Container(
         height: 500,
         width: 400,
+       padding: EdgeInsets.all(8.0),
        // color: Colors.redAccent,
         child: Stack(
           alignment: Alignment.topLeft,

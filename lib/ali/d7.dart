@@ -22,6 +22,7 @@ class _D7State extends State<D7> {
         foregroundColor: Colors.black,
       ),
       body: Container(
+        padding: EdgeInsets.all(8.0),
         height: 500,
         width: 400,
         //color: Colors.redAccent,

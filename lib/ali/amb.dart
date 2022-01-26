@@ -65,35 +65,22 @@ class _Ambulance_PageState extends State<Ambulance_Page> {
             Padding(
               padding: const EdgeInsets.all(10),
               child: ElevatedButton(onPressed: (){
-                launch('tel:01811-652380');
+                launch('tel:01727-919189');
 
               },
-                child: Text('এম্বুলেন্স সার্ভিস কুমিল্লা\n'
-                    '      ফোন:01811-652380',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black87,
+                child: Center(
+                  child: Text('কুমিল্লা সিটি অ্যাম্বুলেন্স ফ্রিজিং সার্ভিস\n'
+                      '               ফোন:01727-919189',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black87,
+                    ),
                   ),
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(10),
-              child: ElevatedButton(onPressed: (){
-                launch('tel:01811-652380');
 
-              },
-                child: Text('এম্বুলেন্স সার্ভিস কুমিল্লা\n'
-                    '      ফোন:01811-652380',
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black87,
-                  ),
-                ),
-              ),
-            ),
           ],
         ),
       ),
