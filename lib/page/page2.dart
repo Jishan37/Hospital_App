@@ -37,14 +37,14 @@ class _TwoState extends State<Two> {
       aspectRatio: 16/9,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.purple,
+          backgroundColor: Colors.grey.shade300,
           title: Center(
             child: Text('HOSPITO',
               style: TextStyle(
                   fontSize: 40,
                   fontFamily: 'jas',
                   fontWeight: FontWeight.bold,
-
+                color: Colors.red,
               ),
             )
           ),

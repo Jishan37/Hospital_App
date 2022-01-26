@@ -22,7 +22,7 @@ class _About_PageState extends State<About_Page> {
         centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.only(top: 15.0,left: 10.0,right: 10.0),
+        padding: const EdgeInsets.only(top: 12.0,left: 10.0,right: 10.0),
         child: Container(
           height: 600,
           width: 400,
@@ -32,10 +32,10 @@ class _About_PageState extends State<About_Page> {
             children: [
               // SizedBox(height: 20,),
               Container(
-                // color: Colors.greenAccent,
+                //color: Colors.greenAccent,
                 height: 90,
                 width: 400,
-                child: Text('\nএই অ্যাপের মাধ্যমে ব্যবহারকারী যে সুবিধাগুলো পাবেনঃ',
+                child: Text('এই অ্যাপের মাধ্যমে ব্যবহারকারী যে সুবিধাগুলো পাবেনঃ',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 22,
@@ -43,10 +43,10 @@ class _About_PageState extends State<About_Page> {
                 ),
               ),
               Align(
-                alignment: Alignment(1,0),
+                alignment: Alignment(1,-0),
                 child: Container(
-                  // color: Colors.blueAccent,
-                  height: 400,
+                  //color: Colors.blueAccent,
+                  height: 450,
                   width: 400,
                   child: Text('১. হাসপাতালের নাম সহ ঠিকানা দেখতে পাবেন এবং হাসপাতালের নাম্বারে '
                       'কল করে তথ্য জানতে পারবেন সাথে গুগল ম্যাপের সাহায্যে হাসপাতালের অবস্থান দেখতে পারবেন।\n'
