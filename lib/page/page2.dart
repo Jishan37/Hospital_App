@@ -1,13 +1,13 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:hospital_app/Faiza/about.dart';
-import 'package:hospital_app/Faiza/faq.dart';
 import 'package:hospital_app/Jishan/Hospital/hospital_main_page.dart';
 import 'package:hospital_app/Jishan/home.dart';
 import 'package:hospital_app/Jishan/shastho_bishoyok.dart';
+import 'package:hospital_app/ali/about.dart';
 import 'package:hospital_app/ali/amb.dart';
 import 'package:hospital_app/ali/diagnostic.dart';
 import 'package:hospital_app/ali/disease.dart';
+import 'package:hospital_app/ali/faq.dart';
 import 'package:hospital_app/kafi/bmi.dart';
 import 'package:hospital_app/kafi/homepage.dart';
 import 'package:hospital_app/kafi/poramorsho.dart';

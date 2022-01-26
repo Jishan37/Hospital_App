@@ -27,17 +27,17 @@ class _Faq_PageState extends State<Faq_Page> {
             alignment: Alignment.topCenter,
             children: [
               Container(
-               // color: Colors.greenAccent,
+                // color: Colors.greenAccent,
                 height: 200,
                 width: 400,
                 child: Text('\n\n\nঅ্যাপ নিয়ে সকল পরামর্শ, অভিযোগ আমাদের সাথে শেয়ার করতে পারেন...',
-                style: TextStyle(
-                  fontSize: 20,
-                  fontStyle: FontStyle.italic,
-                  fontWeight: FontWeight.bold,
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
-                ),
-                ),
+              ),
             ],
           ),
         ),
