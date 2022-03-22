@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BMI_Page extends StatefulWidget {
@@ -15,7 +16,7 @@ class _BMI_PageState extends State<BMI_Page> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Colors.purple[100],
+        backgroundColor: Colors.white,
         appBar: AppBar(title: Text('বিএমআই (BMI)',style: TextStyle(fontSize: 26,color: Colors.red),),
           centerTitle: true,
           backgroundColor: Colors.grey[300],),
@@ -26,39 +27,39 @@ class _BMI_PageState extends State<BMI_Page> {
 
             children: [
               Card(
-                color: Colors.blue[200],
+             //   color: Colors.orange,
                 child: Text(' less than 18.50      ->     Underweight',
                 style: TextStyle(fontSize: 23),
                 ),
               ),
               Card(
-                color: Colors.blue[200],
+              //  color: Colors.blue[200],
                 child: Text(' 18.50 - 24.99          ->     Healthy Weight',
                   style: TextStyle(fontSize: 23),
                 ),
               ),
               Card(
-                color: Colors.blue[200],
+               // color: Colors.blue[200],
                 child: Text(' 25 - 29.99                ->     Overweight',
                   style: TextStyle(fontSize: 23),
                 ),
               ),
               Card(
-                color: Colors.blue[200],
+               // color: Colors.blue[200],
                 child: Text(' 30 or more              ->     obesity',
                   style: TextStyle(fontSize: 23),
                 ),
               ),
               Container(
                 child: Divider(
-                  thickness: 5,
+                  thickness: 3,
                   color: Colors.black,
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 50.0,right: 50),
                 child: Card(
-                  color: Colors.blue[200],
+                //  color: Colors.blue[200],
                   child: Center(
                     child: Text(
                       _result==null? "Enter Value: ":'${_result.toStringAsFixed(2)}',
@@ -74,9 +75,13 @@ class _BMI_PageState extends State<BMI_Page> {
                   controller: _heightcontrolar,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(38.0)
+                    ),
                     labelText: 'Height in cm',
                     labelStyle: TextStyle(fontSize: 26,color: Colors.deepOrange,fontWeight: FontWeight.bold),
                     hintText: 'Enter your height',
+                    hintStyle: TextStyle(fontSize: 18,)
                   ),
                 ),
               ),
@@ -87,9 +92,13 @@ class _BMI_PageState extends State<BMI_Page> {
                   controller: _weightcontrolar,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(38.0)
+                    ),
                     labelStyle: TextStyle(fontSize: 26,color: Colors.deepOrange,fontWeight: FontWeight.bold),
                     labelText: 'Weight in kg',
                     hintText: 'Enter your weight',
+                    hintStyle: TextStyle(fontSize: 18,)
                   ),
                 ),
               ),
